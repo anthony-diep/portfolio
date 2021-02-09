@@ -1,0 +1,43 @@
+/* GLOBAL RESETS */
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0;
+    
+  }
+  
+  main {
+      height: 100vh;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+  }
+  
+  .site-header {
+    position: absolute;
+    color: white;
+    width: 100%;
+  }
+  
+  .hero {
+    background: blue;
+    color: white;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    scroll-snap-align: start;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* section {
+    scroll-snap-align: start;
+  } */
+  
+  .regular {
+    scroll-snap-align: start;
+  }
