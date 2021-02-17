@@ -46,6 +46,20 @@ h3 {
 /* LIMIT NUMBER OF CHARACTERS PER LINE */
 p { max-width: 40em; }
 
+/* TEXT ANIMATION */
+p .message{ 
+  color: #333;
+  font-family: tahoma;
+  font-size: 3rem;
+  font-weight: 100;
+  line-height: 1.5;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  width: 550px;
+}
+
 /* LINKS */
 a {
     color: $color-link;

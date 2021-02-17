@@ -24,103 +24,125 @@
             </div>
             <h1 class="hide-visually"><a href="index.html">Personal Framework</a></h1>
         </div>
-        <nav class="site-nav" data-navstate="close">
-            <h2 class="menu-button">
-                <span class="hide-visually">Menu</span>
-                <svg width="30" height="30">
-                    <title>Menu</title>
-                    <rect id="menubar-top" y="0" width="30" height="3"></rect>
-                    <rect id="menubar-middle" y="8" width="30" height="3"></rect>
-                    <rect id="menubar-bottom" y="16" width="30" height="3"></rect>
-                </svg>
-            </h2>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+        <nav class="site-nav">
+            <!-- data-navstate="close"> -->
+            <div class="menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="panels">
+                <div>
+                    <h1>left</h1>
+                </div>
+                <div>
+                    <h1>right</h1>
+                    <!-- <li><a href="#">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li> -->
+                </div>
             </ul>
         </nav>
     </header>
 
     <main class="site-main">
 
-        <section class="hero animate-on-scroll">
+        <section class="hero">
             <div class="container">
-                <h1>Insert Introduction / Welcome Sentence Here With Typeout Text Animation</h1>
-                <p>Insert Changing Slideout Text Animation Here</p>
-            </div>
-        </section>
-
-        <section id="Section01" class="animate-on-scroll">
-
-            <div class="container">
-
-                <div class="row">
-                    <div class="one-half">
-                        <img src="http://via.placeholder.com/1600x1200" alt="Placeholder">
-                    </div>
-                    <div class="one-half">
-                        <img src="http://via.placeholder.com/1600x1200" alt="Placeholder">
-                    </div>
+                <div class="typing">
+                    <h1>Insert Introduction / Welcome Sentence Here With Typeout Text Animation</h1>
                 </div>
+                <p>
+                    <span>always be</span>
+                    <div class="message">
+                        <div class="word1">close</div>
+                        <div class="word2">code</div>
+                        <div class="word3">creating</div>
+                    </div>
+                </p>
             </div>
         </section>
 
-        <section id="Section02" class="animate-on-scroll">
+        <section id="projects">
             <div class="container">
 
                 <div class="row">
                     <div class="one-half">
-                        <img src="http://via.placeholder.com/1600x1200" alt="Placeholder">
+                        <img src="img/logo-tile.jpg" alt="Placeholder">
                     </div>
                     <div class="one-half">
-                        <img src="http://via.placeholder.com/1600x1200" alt="Placeholder">
+                        <img src="img/court_with_logo.jpg" alt="Placeholder">
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <section id="Section03" class="animate-on-scroll">
-            <div class="container">
 
                 <div class="row">
                     <div class="one-half">
-                        <img src="http://via.placeholder.com/1600x1200" alt="Placeholder">
+                        <img src="img/bookcover.jpg" alt="Placeholder">
                     </div>
                     <div class="one-half">
-                        <img src="http://via.placeholder.com/1600x1200" alt="Placeholder">
+                        <img src="img/stamp-tile.jpg" alt="Placeholder">
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="one-half">
+                        <img src="img/bookcover.jpg" alt="Placeholder">
+                    </div>
+                    <div class="one-half">
+                        <img src="img/stamp-tile.jpg" alt="Placeholder">
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="one-half">
+                        <img src="img/bookcover.jpg" alt="Placeholder">
+                    </div>
+                    <div class="one-half">
+                        <img src="img/stamp-tile.jpg" alt="Placeholder">
                     </div>
                 </div>
             </div>
         </section>
-    </main>
 
-    <section id="Section04" class="animate-on-scroll">
-        <div class="container">
+        <section id="contact" class="hero">
+            <div class="container">
 
-            <div class="row">
-                <div class="one-half">
-                    <img src="http://via.placeholder.com/1600x1200" alt="Placeholder">
-                </div>
-                <div class="one-half">
-                    <img src="http://via.placeholder.com/1600x1200" alt="Placeholder">
+                <div class="row">
+                    <div class="one-whole">
+                        <img src="img/placeholder-1x1-hero.jpg" alt="Placeholder">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
     </main>
 
     <footer class="site-footer">
         <nav class="site-nav">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </footer>
+
+    <!-- SMOOTH SCROLL BY CHRIS FERDINANDI -->
+    <script src="js/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 800,
+            speedAsDuration: true
+        });
+    </script>
+
+    <!-- Main JS -->
+    <script src="js/script.js"></script>
 
 </body>
 
