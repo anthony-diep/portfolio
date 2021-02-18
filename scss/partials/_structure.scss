@@ -52,7 +52,7 @@ section {
 /* HERO SECTION */
 .hero {
     background: black;
-    text-align: center;
+    // text-align: center;
     padding: 6em 0;
     color: white;
     min-height: 100vh; //This increases the height of the hero
@@ -67,6 +67,8 @@ section {
     h1 {
         margin-bottom: .25em;
         color: white;
+        max-width: 900px;
+        display: flex;
     }
     p {
         margin: 1em auto;

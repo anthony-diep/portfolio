@@ -150,7 +150,7 @@
 
 @keyframes typingAnim {
   from {width:0}
-  to {width:100%}
+  to {width:100%}     
 }
 
 // body {
@@ -161,7 +161,7 @@
 //   width: 100vw;
 // }
 
-// h1 {
+// p {
 //   color: #333;
 //   font-family: tahoma;
 //   font-size: 3rem;
@@ -174,15 +174,30 @@
 //   width: 550px;
 // }
 
-// h1 span {
+// p span {
 //   font-size: 40px;
 //   margin-left: 40px;
 // }
 
+.revealmessage {
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  width: 550px;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.premessage {
+  display: inline;
+  background-color: pink;
+  overflow: hidden;
+}
+
 .message {
   background-color: yellow;
   color: #333;
-  display: block;
+  display: inline-block;
   font-weight: 900;
   overflow: hidden;
   position: absolute;

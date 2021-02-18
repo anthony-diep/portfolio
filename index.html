@@ -7,9 +7,9 @@
     <title>Portfolio Framwork v1</title>
 
     <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=source+sans
+    <!-- <link href="https://fonts.googleapis.com/css2?family=source+sans
         +pro:ital,wght@0,400;0,700;1,400;1,700&family=source+serif+
-        pro&display=swap" rel="stylesheet">
+        pro&display=swap" rel="stylesheet"> -->
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -20,7 +20,7 @@
     <header class="site-header">
         <div class="site-id">
             <div class="logo">
-                <a href="index.html"><img src="img/unnamed.png" alt="Test Logo"></a>
+                <a href="index.html"><img src="#" alt="Test Logo"></a>
             </div>
             <h1 class="hide-visually"><a href="index.html">Personal Framework</a></h1>
         </div>
@@ -52,16 +52,19 @@
         <section class="hero">
             <div class="container">
                 <div class="typing">
-                    <h1>Insert Introduction / Welcome Sentence Here With Typeout Text Animation</h1>
+                    <h1>Lorem ipsum dolor sit amet,
+                        consetetur sadipscing elitr, sed
+                        diam nonumy eirmod tempor
+                        invidunt ut labore et dolore</h1>
                 </div>
-                <p>
-                    <span>always be</span>
+                <div class="revealmessage">
+                    <div class="premessage">Lorem ipsum</div>
                     <div class="message">
-                        <div class="word1">close</div>
-                        <div class="word2">code</div>
-                        <div class="word3">creating</div>
+                        <div class="word1">text1</div>
+                        <div class="word2">text2</div>
+                        <div class="word3">text3</div>
                     </div>
-                </p>
+                </div>
             </div>
         </section>
 
@@ -103,12 +106,26 @@
         <section id="contact" class="hero">
             <div class="container">
 
-                <div class="row">
-                    <div class="one-whole">
-                        <img src="img/placeholder-1x1-hero.jpg" alt="Placeholder">
-                    </div>
-                </div>
-            </div>
+                <div id="wufoo-z1lifyyo04r0qxp" class="mywufooform"></div>
+                <script type="text/javascript">var z1lifyyo04r0qxp; (function (d, t) {
+                        var s = d.createElement(t), options = {
+                            'userName': 'anthonydiep',
+                            'formHash': 'z1lifyyo04r0qxp',
+                            'autoResize': true,
+                            'height': '497',
+                            'async': true,
+                            'host': 'wufoo.com',
+                            'header': 'show',
+                            'ssl': true
+                        };
+                        s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'secure.wufoo.com/scripts/embed/form.js';
+                        s.onload = s.onreadystatechange = function () {
+                            var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+                            try { z1lifyyo04r0qxp = new WufooForm(); z1lifyyo04r0qxp.initialize(options); z1lifyyo04r0qxp.display(); } catch (e) { }
+                        };
+                        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+                    })(document, 'script');</script>
+
         </section>
     </main>
 
