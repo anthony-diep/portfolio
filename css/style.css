@@ -324,12 +324,31 @@ section {
 }
 
 /* SITE-HEADER SITE-NAV */
-.site-header ul {
+.site-header .site-nav {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.site-header .site-nav .panels {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+}
+.site-header .site-nav .panels ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: red;
   position: fixed;
+  background-color: white;
   top: 0;
   right: 0;
   width: 100%;
@@ -342,34 +361,7 @@ section {
   transition: 0.3s all ease-out;
   z-index: 1;
 }
-.site-header li {
-  font-size: 4vw;
-  min-width: 20vw;
-  transform: translate(10%, 0);
-  transition: 0.3s all ease-out 0.3s;
-  opacity: 0;
-}
-
-.site-nav {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  left: 0;
-  top: 0;
-  margin: 0;
-  padding: 0;
-  z-index: 2;
-  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-}
-.site-nav .panels {
-  width: 100%;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  display: flex;
-}
-.site-nav .panels li {
+.site-header .site-nav .panels li {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -385,11 +377,16 @@ section {
   overflow: hidden;
   transform: scale(0, 1);
   transform-origin: 0% 0% 0px;
+  font-size: 4vw;
+  min-width: 20vw;
+  transform: translate(10%, 0);
+  transition: 0.3s all ease-out 0.3s;
+  opacity: 0;
 }
-.site-nav .panels li:nth-child(2) {
+.site-header .site-nav .panels li:nth-child(2) {
   background: white;
 }
-.site-nav .menu-button {
+.site-header .site-nav .menu-button {
   position: absolute;
   right: 30px;
   top: 20px;
@@ -397,11 +394,12 @@ section {
   z-index: 5;
   text-align: center;
   text-decoration: none;
+  cursor: pointer;
   /*   background:#ffffff; */
   /*   border-radius: 40px; */
   transition: all 0.25s cubic-bezier(0.18, 0.02, 0.08, 0.98);
 }
-.site-nav .menu-button span {
+.site-header .site-nav .menu-button span {
   background: white;
   border-radius: 3px;
   display: inline-block;
@@ -416,27 +414,27 @@ section {
   transition-timing-fuction: cubic-bezier(0.18, 0.02, 0.08, 0.98);
   transition-delay: 0;
 }
-.site-nav .menu-button span:last-child {
+.site-header .site-nav .menu-button span:last-child {
   margin-right: 0px;
 }
-.site-nav[data-navstate=open] .menu-button span {
+.site-header .site-nav[data-navstate=open] .menu-button span {
   background: #fff;
   transition-delay: 0.5s;
 }
-.site-nav[data-navstate=closed] .menu-button span {
+.site-header .site-nav[data-navstate=closed] .menu-button span {
   transition-delay: 0;
 }
-.site-nav[data-navstate=open] .menu-button span:nth-child(1) {
+.site-header .site-nav[data-navstate=open] .menu-button span:nth-child(1) {
   transform: rotate(45deg);
   margin-top: 0px;
   margin-left: 0px;
 }
-.site-nav[data-navstate=open] .menu-button span:nth-child(3) {
+.site-header .site-nav[data-navstate=open] .menu-button span:nth-child(3) {
   transform: rotate(-45deg);
   margin-left: -18px;
   margin-top: 0px;
 }
-.site-nav[data-navstate=open] .menu-button span:nth-child(2) {
+.site-header .site-nav[data-navstate=open] .menu-button span:nth-child(2) {
   height: 0;
 }
 
@@ -464,14 +462,13 @@ section {
 }
 
 /* FOOTER SITE-NAV */
-.site-footer .site-nav {
-  position: absolute;
-}
 .site-footer .site-nav ul {
-  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .site-footer .site-nav a {
   display: inline-block;
@@ -482,8 +479,7 @@ section {
 /* ANIMATIONS */
 .typing > * {
   overflow: hidden;
-  white-space: nowrap;
-  animation: typingAnim 4s steps(60);
+  animation: typingAnim 2.5s steps(60);
 }
 
 @keyframes typingAnim {
@@ -522,13 +518,15 @@ section {
   animation: openclose 5s ease-in-out infinite;
 }
 
-.word1, .word2, .word3 {
+.word1,
+.word2,
+.word3 {
   font-family: tahoma;
 }
 
 @keyframes openclose {
   0% {
-    top: 0.2rem;
+    top: 0rem;
     width: 0;
   }
   5% {
@@ -538,30 +536,30 @@ section {
     width: 230px;
   }
   30% {
-    top: 0.2rem;
+    top: 0rem;
     width: 230px;
   }
   33% {
-    top: 0.2rem;
+    top: 0rem;
     width: 0;
   }
   35% {
-    top: 0.2rem;
+    top: 0rem;
     width: 0;
   }
   38% {
-    top: -4.5rem;
+    top: -4rem;
   }
   48% {
-    top: -4.5rem;
+    top: -4rem;
     width: 190px;
   }
   62% {
-    top: -4.5rem;
+    top: -4rem;
     width: 190px;
   }
   66% {
-    top: -4.5rem;
+    top: -4rem;
     width: 0;
     text-indent: 0;
   }
