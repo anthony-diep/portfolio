@@ -24,11 +24,10 @@
             <div class="logo">
                 <a href="index.html"><img src="img/personal_logo.png" alt="Test Logo"></a>
             </div>
-            <h1 class="hide-visually"><a href="index.html">Personal Framework</a></h1>
+            <!-- <h1 class="hide-visually"><a href="index.html">Personal Framework</a></h1> -->
         </div>
 
-        <nav class="site-nav">
-            <!-- data-navstate="close"> -->
+        <nav class="site-nav" data-navstate="close">
             <div class="menu-button">
                 <span></span>
                 <span></span>
@@ -37,14 +36,12 @@
 
             <ul class="panels">
                 <div>
-                    <h1>left</h1>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
                 </div>
                 <div>
-                    <h1>right</h1>
-                    <!-- <li><a href="#">Home</a></li>
-                            <li><a href="#">Projects</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li> -->
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </div>
             </ul>
         </nav>
@@ -86,6 +83,18 @@
             </ul>
         </nav>
     </footer>
+
+    <!-- SMOOTH SCROLL BY CHRIS FERDINANDI -->
+    <script src="js/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 800,
+            speedAsDuration: true
+        });
+    </script>
+
+    <!-- Main JS -->
+    <script src="js/script.js"></script>
 
 </body>
 
