@@ -392,7 +392,6 @@ section {
 .site-nav .menu-button {
   position: absolute;
   right: 30px;
-  display: block;
   top: 20px;
   width: 40px;
   z-index: 5;
@@ -400,13 +399,12 @@ section {
   text-decoration: none;
   /*   background:#ffffff; */
   /*   border-radius: 40px; */
-  padding: 15px;
   transition: all 0.25s cubic-bezier(0.18, 0.02, 0.08, 0.98);
 }
 .site-nav .menu-button span {
-  background: #1c76ea;
+  background: white;
   border-radius: 3px;
-  display: block;
+  display: inline-block;
   margin-top: 3px;
   margin-right: 4px;
   height: 35px;
@@ -466,6 +464,9 @@ section {
 }
 
 /* FOOTER SITE-NAV */
+.site-footer .site-nav {
+  position: absolute;
+}
 .site-footer .site-nav ul {
   display: flex;
   margin: 0;

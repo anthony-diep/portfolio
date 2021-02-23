@@ -74,7 +74,7 @@
     .menu-button {
         position: absolute;
         right: 30px;
-        display: block;
+        // display: block;
         top: 20px;
         width: 40px;
         z-index: 5;
@@ -82,13 +82,13 @@
         text-decoration: none;
         /*   background:#ffffff; */
         /*   border-radius: 40px; */
-        padding: 15px;
+        // padding: 15px;
         transition: all 0.25s cubic-bezier(0.18, 0.02, 0.08, 0.98);
 
         span {
-            background: #1c76ea;
+            background: white;
             border-radius: 3px;
-            display: block;
+            display: inline-block;
             margin-top: 3px;
             margin-right: 4px;
             height: 35px;
@@ -154,6 +154,8 @@
 
 /* FOOTER SITE-NAV */
 .site-footer .site-nav {
+    position: absolute;
+
     ul {
         display: flex;
         margin: 0;
