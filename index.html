@@ -33,18 +33,18 @@
 
             <div class="panels">
                 <div class="panel panel1">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+                    <h1>this is h1</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, nesciunt explicabo. Sequi odit
+                        ipsam eaque iste aut nam minus molestiae, laudantium nesciunt aliquam sed et!</p>
                 </div>
                 <div class="panel panel2">
                     <div class="panel2child">
-                        <h1>this is h1</h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, nesciunt explicabo. Sequi odit
-                            ipsam eaque iste aut nam minus molestiae, laudantium nesciunt aliquam sed et!</p>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -73,65 +73,98 @@
             </div>
         </section>
 
-        <section id="projects">
+        <section id="projects" class="animate-on-scroll">
             <div class="container">
-
                 <div class="row">
-                    <div class="one-half">
+                    <div class="one-half hover-block">
                         <img src="img/logo-tile.jpg" alt="Placeholder">
+                        <div class="hover-content from-left">
+                            <div class="projects-content">
+                                <h1 class="projects-content-title">LOGOS</h1>
+                            </div>
+                        </div>
                     </div>
-                    <div class="one-half">
+                    <div class="one-half hover-block">
                         <img src="img/court_with_logo.jpg" alt="Placeholder">
+                        <div class="hover-content from-right">
+                            <div class="projects-content">
+                                <h1 class="projects-content-title">BRANDING</h1>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-
-                <div class="row">
-                    <div class="one-half">
-                        <img src="img/bookcover.jpg" alt="Placeholder">
-                    </div>
-                    <div class="one-half">
-                        <img src="img/stamp-tile.jpg" alt="Placeholder">
-                    </div>
-                </div>
-
-
-                <div class="row">
-                    <div class="one-half">
-                        <img src="img/loki-tile.jpg" alt="Placeholder">
-                    </div>
-                    <div class="one-half">
-                        <img src="img/web-site02tile.jpg" alt="Placeholder">
-                    </div>
-                </div>
-
             </div>
-        </section>
 
-        <section id="contact" class="hero">
-            <div class="container">
+            <section id="projects2" class="animate-on-scroll">
+                <div class="container">
+                    <div class="row">
+                        <div class="one-half hover-block">
+                            <img src="img/bookcover.jpg" alt="Placeholder">
+                            <div class="hover-content from-left">
+                                <div class="projects-content">
+                                    <h1 class="projects-content-title">Book Covers</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="one-half hover-block">
+                            <img src="img/stamp-tile.jpg" alt="Placeholder">
+                            <div class="hover-content from-right">
+                                <div class="projects-content">
+                                    <h1 class="projects-content-title">Stamps</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                <div id="wufoo-z1lifyyo04r0qxp" class="mywufooform"></div>
-                <script type="text/javascript">var z1lifyyo04r0qxp; (function (d, t) {
-                        var s = d.createElement(t), options = {
-                            'userName': 'anthonydiep',
-                            'formHash': 'z1lifyyo04r0qxp',
-                            'autoResize': true,
-                            'height': '497',
-                            'async': true,
-                            'host': 'wufoo.com',
-                            'header': 'show',
-                            'ssl': true
-                        };
-                        s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'secure.wufoo.com/scripts/embed/form.js';
-                        s.onload = s.onreadystatechange = function () {
-                            var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-                            try { z1lifyyo04r0qxp = new WufooForm(); z1lifyyo04r0qxp.initialize(options); z1lifyyo04r0qxp.display(); } catch (e) { }
-                        };
-                        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-                    })(document, 'script');</script>
+                <section id="projects3" class="animate-on-scroll">
+                    <div class="container">
+                        <div class="row">
+                            <div class="one-half hover-block">
+                                <img src="img/loki-tile.jpg" alt="Placeholder">
+                                <div class="hover-content from-left">
+                                    <div class="projects-content">
+                                        <h1 class="projects-content-title">UI Design</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="one-half hover-block">
+                                <img src="img/web-site02tile.jpg" alt="Placeholder">
+                                <div class="hover-content from-right">
+                                    <div class="projects-content">
+                                        <h1 class="projects-content-title">UI Design</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-        </section>
+                    </div>
+                </section>
+
+                <section id="contact" class="hero">
+                    <div class="container">
+
+                        <div id="wufoo-z1lifyyo04r0qxp" class="mywufooform"></div>
+                        <script type="text/javascript">var z1lifyyo04r0qxp; (function (d, t) {
+                                var s = d.createElement(t), options = {
+                                    'userName': 'anthonydiep',
+                                    'formHash': 'z1lifyyo04r0qxp',
+                                    'autoResize': true,
+                                    'height': '497',
+                                    'async': true,
+                                    'host': 'wufoo.com',
+                                    'header': 'show',
+                                    'ssl': true
+                                };
+                                s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'secure.wufoo.com/scripts/embed/form.js';
+                                s.onload = s.onreadystatechange = function () {
+                                    var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+                                    try { z1lifyyo04r0qxp = new WufooForm(); z1lifyyo04r0qxp.initialize(options); z1lifyyo04r0qxp.display(); } catch (e) { }
+                                };
+                                var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+                            })(document, 'script');</script>
+
+                </section>
     </main>
 
     <footer class="site-footer">

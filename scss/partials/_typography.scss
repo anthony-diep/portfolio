@@ -1,20 +1,30 @@
 /* BASE TEXT COLORS */
 body {
-    color: $color-text-body; 
+    color: $color-text-body;
 }
 
 /* HEADINGS */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: $color-text-headings;
 }
 
 /* BASE TEXT FONTS */
 body {
-    font-family: $font-family-sans; 
+    font-family: $font-family-sans;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: $font-family-serif; 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-family-serif;
 }
 
 /* BASE TYPOGRAPHY */
@@ -23,8 +33,14 @@ body {
     line-height: 1.4;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-    margin: 0 0 0.5em 0; 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0 0 0.5em 0;
 }
 
 /* TYPOGRAPHIC SCALES*/
@@ -44,20 +60,8 @@ h3 {
 }
 
 /* LIMIT NUMBER OF CHARACTERS PER LINE */
-p { max-width: 40em; }
-
-/* TEXT ANIMATION */
-p .message{ 
-  color: #333;
-  font-family: tahoma;
-  font-size: 3rem;
-  font-weight: 100;
-  line-height: 1.5;
-  text-transform: uppercase;
-  white-space: nowrap;
-  overflow: hidden;
-  position: relative;
-  width: 550px;
+p {
+    max-width: 40em;
 }
 
 /* LINKS */
@@ -67,11 +71,12 @@ a {
         color: $color-link-darker;
     }
 }
+
 /* HORIZONTAL LINE */
 hr {
     border: 0;
     height: 1px;
-    background-color: rgba(0,0,0,.1);
+    background-color: rgba(0, 0, 0, 0.1);
     margin: 3em 0;
 }
 
@@ -89,7 +94,7 @@ hr {
     font-size: 2.5em;
     line-height: 1.1;
     color: $color-lightgrey;
-    margin: .25em 0;
+    margin: 0.25em 0;
 }
 
 /* SECTION HEADING */
@@ -98,6 +103,21 @@ hr {
     font-family: $font-family-sans;
     font-weight: normal;
     text-transform: uppercase;
-    letter-spacing: .05em;
+    letter-spacing: 0.05em;
     margin: 3em 0 3em 0;
+}
+
+.projects-content {
+    margin: auto;
+    padding: 17em 5em;
+    max-width: 75%;
+    color: $color-text-body;
+}
+
+.projects-content-title {
+    font-size: 5em;
+    color: $color-text-body;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

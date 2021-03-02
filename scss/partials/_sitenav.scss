@@ -1,6 +1,6 @@
 /* SITE-HEADER SITE-NAV */
 .site-header .site-nav {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 100vh;
     left: 0;
@@ -35,7 +35,7 @@
         }
 
         .panel1 {
-            background: red;
+            background: white;
             transform: translate(-100%, 0);
             align-items: flex-end;
             z-index: 20;
@@ -45,7 +45,7 @@
         }
 
         .panel2child {
-            background: blue;
+            background: grey;
             transform: translate(-100%, 0);
             z-index: 10;
             height: 100vh;
@@ -53,6 +53,8 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            font-size: 3em;
+            line-height: 1;
         }
 
         .panel2 {
@@ -60,7 +62,7 @@
             overflow: hidden;
             // display: block;
             padding: 0;
-            position: fixed;
+            // position: fixed;
             top: 0;
             left: 50%;
         }
@@ -119,7 +121,7 @@
         // display: block;
         top: 20px;
         width: 40px;
-        z-index: 5;
+        z-index: 20;
         text-align: center;
         text-decoration: none;
         cursor: pointer;
