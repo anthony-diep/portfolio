@@ -11,8 +11,21 @@ mymenubutton.onclick = function () {
   }
 }
 
+const myinlinelinks = document.querySelectorAll('.inline-scroll');
+for (var i = 0; i < myinlinelinks.length; i++) {
+  myinlinelinks[i].addEventListener('click', function (e) {
+    mysitenav.setAttribute('data-navstate', 'closed');
+  });
+}
+
+
 // REVEAL ON SCROLL JS
 // CHANGE ACTIVE STATE FOR ALL SECTIONS WITH INTERSECTION OBSERVER
+let options = {
+  rootMargin: "-200px 0px -200px 0px"
+  // threshold: 0.25
+};
+
 const myobserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -21,7 +34,7 @@ const myobserver = new IntersectionObserver(entries => {
       entry.target.setAttribute('data-sectionstate', 'inactive');
     }
   });
-});
+}, options);
 document.querySelectorAll('.animate-on-scroll').forEach((section) => {
   myobserver.observe(section);
 });

@@ -42,6 +42,16 @@
             position: fixed;
             top: 0;
             left: 0;
+
+            ul {
+                padding-top: 40px;
+            }
+
+            li {
+                list-style: none;
+                color: black;
+                margin-top: 5px;
+            }
         }
 
         .panel2child {
@@ -62,9 +72,19 @@
             overflow: hidden;
             // display: block;
             padding: 0;
-            // position: fixed;
+            position: fixed;
             top: 0;
             left: 50%;
+
+            li {
+                list-style: none;
+            }
+            a {
+                color: $color-link;
+                &:hover {
+                    color: $color-link-darker;
+                }
+            }
         }
 
         // ul {
@@ -117,6 +137,7 @@
 
     .menu-button {
         position: absolute;
+        position: fixed;
         right: 30px;
         // display: block;
         top: 20px;
@@ -209,6 +230,14 @@
 .site-nav[data-navstate="open"] .panels .panel1 {
     // transition-delay: 0.3s;
     transform: translate(0, 0);
+}
+
+.site-nav[data-navstate="open"] .panels .panel2 {
+    visibility: visible;
+}
+
+.site-nav[data-navstate="closed"] .panels .panel2 {
+    visibility: hidden;
 }
 
 /* FOOTER SITE-NAV */
