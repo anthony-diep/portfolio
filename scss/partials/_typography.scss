@@ -64,11 +64,6 @@ p {
     max-width: 40em;
 }
 
-.about-body {
-    color: $color-text-body;
-    background-color: white;
-}
-
 /* LINKS */
 a {
     color: $color-link;
@@ -125,23 +120,4 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.about-name {
-    h1 {
-        font-size: 6em;
-    }
-    h3 {
-        font-size: 2.5em;
-        color: $color-accent;
-        margin-bottom: 0;
-    }
-    h5 {
-        max-width: 15em;
-        color: white;
-    }
-    // p {
-    //     color: $color-text-body;
-    //     background-color: white;
-    // }
 }

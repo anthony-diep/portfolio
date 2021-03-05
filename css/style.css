@@ -90,11 +90,6 @@ p {
   max-width: 40em;
 }
 
-.about-body {
-  color: rgba(0, 0, 0, 0.8);
-  background-color: white;
-}
-
 /* LINKS */
 a {
   color: white;
@@ -153,19 +148,6 @@ hr {
   justify-content: center;
 }
 
-.about-name h1 {
-  font-size: 6em;
-}
-.about-name h3 {
-  font-size: 2.5em;
-  color: #8c0000;
-  margin-bottom: 0;
-}
-.about-name h5 {
-  max-width: 15em;
-  color: white;
-}
-
 /* BUTTONS */
 .button {
   display: inline-block;
@@ -187,10 +169,6 @@ img {
   height: auto;
 }
 
-.about-image {
-  position: relative;
-}
-
 /* RESET BODY */
 body {
   margin: 0;
@@ -207,6 +185,63 @@ body {
   max-width: 100%;
   margin: 0 auto;
   padding: 0 5em;
+}
+.about-container .about-body {
+  color: rgba(0, 0, 0, 0.8);
+  background-color: white;
+  margin: 0;
+  padding: 2em;
+  max-width: none;
+}
+.about-container .about-name h1 {
+  font-size: 6em;
+}
+.about-container .about-name h1 span {
+  font-size: 2.5em;
+  color: #8c0000;
+  margin-bottom: 0;
+  display: block;
+}
+.about-container .about-name h2 {
+  max-width: 15em;
+  color: white;
+}
+.about-container .about-img {
+  border: 1px solid red;
+}
+.about-container .about-img img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .about-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+  }
+  .about-container .child1 {
+    grid-column: 6/span 3;
+    grid-row: 5/span 3;
+    z-index: 5;
+  }
+  .about-container .child2 {
+    grid-column: 2/span 3;
+    grid-row: 5/span 3;
+    display: flex;
+    align-items: flex-end;
+  }
+  .about-container .child3 {
+    grid-column: 2/span 6;
+    grid-row: 9/span 3;
+    z-index: 4;
+  }
+  .about-container .child4 {
+    grid-column: 7/span 6;
+    grid-row: 1/span 12;
+    display: flex;
+    align-items: center;
+  }
 }
 
 /* MEDIA QUERIES */
@@ -349,7 +384,7 @@ section {
 /* HERO SECTION */
 .hero {
   background: black;
-  padding: 6em 0;
+  padding: 2em 0;
   color: white;
   min-height: 100vh;
   display: grid;
