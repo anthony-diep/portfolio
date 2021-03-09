@@ -18,26 +18,26 @@ body {
         color: $color-text-body;
         background-color: white;
         margin: 0;
-        padding: 2em;
-        max-width: none;
+        padding: 3em;
+        max-width: 80%;
     }
     .about-name {
         h1 {
             font-size: 6em;
         }
         h1 span {
-            font-size: 2.5em;
+            font-size: 2em;
             color: $color-accent;
             margin-bottom: 0;
             display: block;
         }
         h2 {
-            max-width: 15em;
+            font-size: 1.25em;
+            max-width: 10em;
             color: white;
         }
     }
     .about-img {
-        border: 1px solid red;
         img {
             width: 100%;
         }
@@ -47,30 +47,30 @@ body {
         height: 100%;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(12, 1fr);
+        grid-template-rows: repeat(8, 1fr);
 
         .child1 {
             grid-column: 6 / span 3;
-            grid-row: 5 / span 3;
+            grid-row: 3 / span 3;
             z-index: 5;
         }
 
         .child2 {
-            grid-column: 2 / span 3;
-            grid-row: 5 / span 3;
+            grid-column: 3 / span 3;
+            grid-row: 2 / span 3;
             display: flex;
             align-items: flex-end;
         }
 
         .child3 {
-            grid-column: 2 / span 6;
-            grid-row: 9 / span 3;
+            grid-column: 3 / span 6;
+            grid-row: 6 / span 3;
             z-index: 4;
         }
 
         .child4 {
             grid-column: 7 / span 6;
-            grid-row: 1 / span 12;
+            grid-row: 1 / span 8;
             display: flex;
             align-items: center;
         }

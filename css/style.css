@@ -93,9 +93,11 @@ p {
 /* LINKS */
 a {
   color: white;
+  text-decoration: none;
 }
 a:hover {
   color: #464646;
+  text-decoration: none;
 }
 
 /* HORIZONTAL LINE */
@@ -137,12 +139,11 @@ hr {
   margin: auto;
   padding: 17em 5em;
   max-width: 75%;
-  color: rgba(0, 0, 0, 0.8);
+  place-items: center;
 }
 
 .projects-content-title {
   font-size: 5em;
-  color: rgba(0, 0, 0, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -190,24 +191,22 @@ body {
   color: rgba(0, 0, 0, 0.8);
   background-color: white;
   margin: 0;
-  padding: 2em;
-  max-width: none;
+  padding: 3em;
+  max-width: 80%;
 }
 .about-container .about-name h1 {
   font-size: 6em;
 }
 .about-container .about-name h1 span {
-  font-size: 2.5em;
+  font-size: 2em;
   color: #8c0000;
   margin-bottom: 0;
   display: block;
 }
 .about-container .about-name h2 {
-  max-width: 15em;
+  font-size: 1.25em;
+  max-width: 10em;
   color: white;
-}
-.about-container .about-img {
-  border: 1px solid red;
 }
 .about-container .about-img img {
   width: 100%;
@@ -218,27 +217,27 @@ body {
     height: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 1fr);
   }
   .about-container .child1 {
     grid-column: 6/span 3;
-    grid-row: 5/span 3;
+    grid-row: 3/span 3;
     z-index: 5;
   }
   .about-container .child2 {
-    grid-column: 2/span 3;
-    grid-row: 5/span 3;
+    grid-column: 3/span 3;
+    grid-row: 2/span 3;
     display: flex;
     align-items: flex-end;
   }
   .about-container .child3 {
-    grid-column: 2/span 6;
-    grid-row: 9/span 3;
+    grid-column: 3/span 6;
+    grid-row: 6/span 3;
     z-index: 4;
   }
   .about-container .child4 {
     grid-column: 7/span 6;
-    grid-row: 1/span 12;
+    grid-row: 1/span 8;
     display: flex;
     align-items: center;
   }
@@ -376,7 +375,7 @@ body {
 }
 
 section {
-  padding: 4em 0 0;
+  padding: 2em 0 2em 0;
   display: grid;
   align-items: center;
 }
@@ -816,7 +815,7 @@ ANIMATIONS SCROLL TRIGGERED ANIMATIONS .animate-on-scroll,
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.84);
   transform: translate(100%, 0);
   transition: all 0.4s ease-out;
 }
@@ -830,22 +829,6 @@ ANIMATIONS SCROLL TRIGGERED ANIMATIONS .animate-on-scroll,
   transform: translate(-100%, 0);
 }
 .hover-block:hover .hover-content {
-  transform: translate(0, 0);
-}
-
-.hover-block-roster {
-  position: relative;
-  overflow: hidden;
-}
-.hover-block-roster .hover-content {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.hover-block-roster:hover .hover-content {
   display: block;
-  background-color: rgba(0, 0, 0, 0.5);
+  transform: translate(0, 0);
 }

@@ -20,30 +20,66 @@
 <body>
 
     <header class="site-header">
-        <div class="site-identity">
-            <h1>
-                <a href="index.html">Anthony Diep</a>
-            </h1>
+        <div class="site-id">
+            <div class="logo">
+                <a href="index.html"><img src="img/personal_logo_black.png" alt="Test Logo"></a>
+            </div>
+            <!-- <h1 class="hide-visually"><a href="index.html">Personal Framework</a></h1> -->
         </div>
-        <nav class="site-navigation">
-            <ul>
-                <li class="selected">
-                    <a href="index.html#work" class="selected">Work</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
+
+        <nav class="site-nav" data-navstate="close">
+            <div class="menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="panels">
+                <div class="panel panel1">
+                    <img src="img/overlay-pic.jpg" alt="Anthony Diep">
+                    <ul>
+                        <li>Anthony Diep</li>
+                        <li>Honolulu | Hawaii</li>
+                        <li>Instagram</li>
+                        <li>Linkedin</li>
+                    </ul>
+                </div>
+                <div class="panel panel2">
+                    <div class="panel2child">
+                        <ul class="overlaymenu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main class="site-main">
 
-        <section class="full-width">
-            <img src="img/surfrider_banner.jpg" alt="placeholder" class="scale-with-grid" />
+        <section id="projects">
+            <div class="container">
+                <div>
+                    <h1>HAWAII<span>SURFRIDERS</span></h1>
+                </div>
+                <div>
+                    <img src="img/surfrider-partial-logo.png" alt="Test Logo">
+                </div>
+                <p>Branding | Packaging | Website</p>
+                <h1>theBRAND</h1>
+                <p>The Hawaii Surfriders is a fictional professional basketball team affiliated
+                    with the National Basketball Association.</p>
+                <h1>theGOAL</h1>
+                <p>For this student identity project, my focus was to create a system that can
+                    both presents the characteristics of the team and develop a connection with
+                    its fans.</p>
+                <p>Medium: Illustrator | Photoshop | XD</p>
+                <div>
+                    <img src="img/lebron.png" alt="Test Logo">
+                </div>
         </section>
 
         <!-- <section>
@@ -72,24 +108,27 @@
     </main>
 
     <footer class="site-footer">
-        <nav class="site-navigation">
+        <nav class="site-nav">
             <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="index.html#work">Work</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-
     </footer>
+
+    <!-- SMOOTH SCROLL BY CHRIS FERDINANDI -->
+    <script src="js/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 800,
+            speedAsDuration: true
+        });
+    </script>
+
+    <!-- Main JS -->
+    <script src="js/script.js"></script>
 
 </body>
 
