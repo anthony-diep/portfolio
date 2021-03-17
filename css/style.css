@@ -533,6 +533,14 @@ section {
   height: 0;
 }
 
+.site-header[data-colorstate=dark] .site-nav .menu-button span {
+  background: white;
+}
+
+.site-header[data-colorstate=light] .site-nav .menu-button span {
+  background: red;
+}
+
 .site-nav[data-navstate=open] .menu-button {
   visibility: visible;
   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
