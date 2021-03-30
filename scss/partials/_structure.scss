@@ -21,6 +21,8 @@
     .site-id {
         // display: flex; //This places text next to logo
         align-items: center;
+        // position: absolute;
+        z-index: 13;
     }
 
     .logo {
@@ -98,4 +100,19 @@ section {
         margin: 1em auto;
         color: black;
     }
+}
+
+/* FULL-WIDTH HELPER */
+
+.full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.full-width img {
+    width: 100%;
 }

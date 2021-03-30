@@ -141,10 +141,12 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
 .projects-content-title {
   font-size: 5em;
+  font-size: clamp(1em, 5vw, 5em);
 }
 
 /* BUTTONS */
@@ -191,6 +193,9 @@ body {
   margin: 0;
   padding: 3em;
   max-width: 80%;
+}
+.about-container .about-name {
+  z-index: 15;
 }
 .about-container .about-name h1 {
   font-size: 6em;
@@ -354,6 +359,7 @@ body {
 }
 .site-header .site-id {
   align-items: center;
+  z-index: 13;
 }
 .site-header .logo {
   max-width: 60px;
@@ -413,6 +419,20 @@ section {
 .project-section p {
   margin: 1em auto;
   color: black;
+}
+
+/* FULL-WIDTH HELPER */
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.full-width img {
+  width: 100%;
 }
 
 .hide-visually {
@@ -718,14 +738,15 @@ ANIMATIONS SCROLL TRIGGERED ANIMATIONS .animate-on-scroll,
   overflow: hidden;
   display: block;
   white-space: nowrap;
+  line-height: 1.25;
   width: 0;
-  animation: typingAnim 3s steps(50) forwards;
+  animation: typingAnim 2s steps(50) forwards;
 }
 .typing:nth-child(2) {
-  animation-delay: 2.5s;
+  animation-delay: 1s;
 }
 .typing:nth-child(3) {
-  animation-delay: 5s;
+  animation-delay: 2s;
 }
 
 @keyframes typingAnim {
@@ -744,7 +765,6 @@ ANIMATIONS SCROLL TRIGGERED ANIMATIONS .animate-on-scroll,
 
 .premessage {
   display: inline;
-  background-color: pink;
   overflow: hidden;
 }
 
@@ -757,8 +777,8 @@ ANIMATIONS SCROLL TRIGGERED ANIMATIONS .animate-on-scroll,
   position: absolute;
   padding-left: 0.5rem;
   top: 0.2rem;
-  left: 270px;
-  animation: openclose 5s ease-in-out infinite;
+  left: 200px;
+  animation: openclose 7s ease-in-out infinite;
 }
 
 .word1,
@@ -795,11 +815,11 @@ ANIMATIONS SCROLL TRIGGERED ANIMATIONS .animate-on-scroll,
   }
   48% {
     top: -4rem;
-    width: 190px;
+    width: 180px;
   }
   62% {
     top: -4rem;
-    width: 190px;
+    width: 180px;
   }
   66% {
     top: -4rem;
@@ -813,11 +833,11 @@ ANIMATIONS SCROLL TRIGGERED ANIMATIONS .animate-on-scroll,
   }
   86% {
     top: -9rem;
-    width: 285px;
+    width: 250px;
   }
   95% {
     top: -9rem;
-    width: 285px;
+    width: 250px;
   }
   98% {
     top: -9rem;

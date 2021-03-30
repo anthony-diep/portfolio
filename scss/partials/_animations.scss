@@ -192,14 +192,15 @@ ANIMATIONS SCROLL TRIGGERED ANIMATIONS .animate-on-scroll,
   overflow: hidden;
   display: block;
   white-space: nowrap;
+  line-height: 1.25;
   &:nth-child(2) {
-    animation-delay: 2.5s;
+    animation-delay: 1s;
   }
   &:nth-child(3) {
-    animation-delay: 5s;
+    animation-delay: 2s;
   }
   width: 0;
-  animation: typingAnim 3s steps(50) forwards;
+  animation: typingAnim 2s steps(50) forwards;
 }
 
 @keyframes typingAnim {
@@ -245,7 +246,6 @@ ANIMATIONS SCROLL TRIGGERED ANIMATIONS .animate-on-scroll,
 
 .premessage {
   display: inline;
-  background-color: pink;
   overflow: hidden;
 }
 
@@ -258,8 +258,8 @@ ANIMATIONS SCROLL TRIGGERED ANIMATIONS .animate-on-scroll,
   position: absolute;
   padding-left: 0.5rem;
   top: 0.2rem;
-  left: 270px;
-  animation: openclose 5s ease-in-out infinite;
+  left: 200px;
+  animation: openclose 7s ease-in-out infinite;
 }
 
 .word1,
@@ -296,11 +296,11 @@ ANIMATIONS SCROLL TRIGGERED ANIMATIONS .animate-on-scroll,
   }
   48% {
     top: -4rem;
-    width: 190px;
+    width: 180px;
   }
   62% {
     top: -4rem;
-    width: 190px;
+    width: 180px;
   }
   66% {
     top: -4rem;
@@ -314,11 +314,11 @@ ANIMATIONS SCROLL TRIGGERED ANIMATIONS .animate-on-scroll,
   }
   86% {
     top: -9rem;
-    width: 285px;
+    width: 250px;
   }
   95% {
     top: -9rem;
-    width: 285px;
+    width: 250px;
   }
   98% {
     top: -9rem;
