@@ -36,6 +36,12 @@ body {
             font-size: 1.25em;
             max-width: 10em;
             color: white;
+            font-family: "oswald";
+        }
+        a {
+            color: $color-accent;
+            font-size: 2.75em;
+            font-family: "oswald";
         }
     }
     .about-img {
@@ -76,6 +82,12 @@ body {
             align-items: center;
         }
     }
+}
+
+/* SURFRIDERS */
+#demobox {
+    background-color: #041e1b;
+    padding: 3em;
 }
 
 /* MEDIA QUERIES */

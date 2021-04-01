@@ -1,6 +1,6 @@
 // OVERLAY NAV MENU SHOW HIDE
 
-const mysitenav = document.querySelector('.site-header .site-nav');
+const mysitenav = document.querySelector('.site-header');
 const mymenubutton = document.querySelector('.menu-button');
 
 mymenubutton.onclick = function () {

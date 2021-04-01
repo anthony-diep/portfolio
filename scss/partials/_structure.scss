@@ -49,6 +49,10 @@ section {
     // min-height: 100vh;
     display: grid;
     align-items: center;
+
+    .surfriders-section {
+        padding: 4em 0 2em 0;
+    }
 }
 
 /* HERO SECTION */
@@ -111,8 +115,10 @@ section {
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
+    display: grid;
+    place-items: center;
 }
 
 .full-width img {
-    width: 100%;
+    width: 80%;
 }

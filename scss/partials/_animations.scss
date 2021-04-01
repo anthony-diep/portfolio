@@ -189,6 +189,8 @@ ANIMATIONS SCROLL TRIGGERED ANIMATIONS .animate-on-scroll,
 // }
 
 .typing {
+  font-family: "oswald";
+  font-size: 2em;
   overflow: hidden;
   display: block;
   white-space: nowrap;
@@ -257,8 +259,8 @@ ANIMATIONS SCROLL TRIGGERED ANIMATIONS .animate-on-scroll,
   overflow: hidden;
   position: absolute;
   padding-left: 0.5rem;
-  top: 0.2rem;
-  left: 200px;
+  // top: 0.2rem;
+  left: 220px;
   animation: openclose 7s ease-in-out infinite;
 }
 
@@ -292,18 +294,18 @@ ANIMATIONS SCROLL TRIGGERED ANIMATIONS .animate-on-scroll,
     width: 0;
   }
   38% {
-    top: -4rem;
+    top: -4.5rem;
   }
   48% {
-    top: -4rem;
+    top: -4.5rem;
     width: 180px;
   }
   62% {
-    top: -4rem;
+    top: -4.5rem;
     width: 180px;
   }
   66% {
-    top: -4rem;
+    top: -4.5rem;
     width: 0;
     text-indent: 0;
   }
