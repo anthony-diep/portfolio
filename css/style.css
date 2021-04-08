@@ -243,6 +243,7 @@ body {
   padding: 0 5em;
 }
 
+/* ABOUT CONTAINER */
 .about-container {
   max-width: 100%;
   margin: 0 auto;
@@ -310,6 +311,96 @@ body {
     grid-row: 1/span 8;
     display: flex;
     align-items: center;
+  }
+}
+
+/* PROJECTS CONTAINER */
+.project-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 5em;
+}
+.project-container .project-body {
+  color: rgba(0, 0, 0, 0.8);
+  background-color: grey;
+  margin: 0;
+  padding: 3em;
+  max-width: 80%;
+}
+.project-container .project-name {
+  z-index: 15;
+}
+.project-container .project-name h1 {
+  font-size: 6em;
+  color: black;
+}
+.project-container .project-name h1 span {
+  font-size: 2em;
+  color: #8c0000;
+  margin-bottom: 0;
+  display: block;
+}
+.project-container .project-name h2 {
+  font-size: 1.25em;
+  max-width: 10em;
+  color: white;
+  font-family: "oswald";
+}
+.project-container .project-name a {
+  color: #8c0000;
+  font-size: 2.75em;
+  font-family: "oswald";
+}
+.project-container .project-img img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .project-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+  }
+  .project-container .child1 {
+    grid-column: 3/span 16;
+    grid-row: 1/span 4;
+    z-index: 4;
+  }
+  .project-container .child2 {
+    grid-column: 5/span 2;
+    grid-row: 3/span 1;
+    z-index: 5;
+  }
+  .project-container .child3 {
+    grid-column: 5/span 10;
+    grid-row: 5/span 3;
+    z-index: 5;
+  }
+  .project-container .child4 {
+    grid-column: 1/span 8;
+    grid-row: 6/span 2;
+    z-index: 5;
+  }
+  .project-container .child5 {
+    grid-column: 10/span 4;
+    grid-row: 7/span 2;
+  }
+  .project-container .child6 {
+    grid-column: 9/span 3;
+    grid-row: 9/span 3;
+  }
+  .project-container .child7 {
+    grid-column: 4/span 3;
+    grid-row: 9/span 3;
+  }
+  .project-container .child8 {
+    grid-column: 1/span 16;
+    grid-row: 10/span 3;
+  }
+  .project-container .child9 {
+    grid-column: 6/span 10;
+    grid-row: 13/span 3;
   }
 }
 
@@ -475,6 +566,24 @@ section .surfriders-section {
   max-width: 900px;
 }
 .hero p {
+  margin: 1em auto;
+}
+
+/* PROJECT HERO SECTION */
+.project-hero {
+  background: white;
+  padding: 2em 0;
+  color: black;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.project-hero h1 {
+  margin-bottom: 0.25em;
+  color: white;
+  max-width: 900px;
+}
+.project-hero p {
   margin: 1em auto;
 }
 
@@ -660,7 +769,7 @@ section .surfriders-section {
 }
 
 .site-header[data-colorstate=light] .site-nav .menu-button span {
-  background: red;
+  background: #9f0000;
 }
 
 .site-header[data-navstate=open] .menu-button {

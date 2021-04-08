@@ -80,6 +80,31 @@ section {
     }
 }
 
+/* PROJECT HERO SECTION */
+.project-hero {
+    background: white;
+    // text-align: center;
+    padding: 2em 0;
+    color: black;
+    min-height: 100vh; //This increases the height of the hero
+    display: grid;
+    place-items: center; //These vertically center items/text in the hero
+
+    .container {
+        // width: 100%; //This overrides the container
+    }
+
+    h1 {
+        margin-bottom: 0.25em;
+        color: white;
+        max-width: 900px;
+        // display: flex;
+    }
+    p {
+        margin: 1em auto;
+    }
+}
+
 /* PROJECT PAGE SECTION */
 .project-section {
     background: white;

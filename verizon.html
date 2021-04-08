@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>My Portfolio</title>
+    <meta name="description" content="A minimal, simple portfolio site." />
+
+    <!-- VIEWPORT FOR MOBILE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- FOR IE -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- MAIN CSS FILE -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=source+sans
+            +pro:ital,wght@0,400;0,700;1,400;1,700&family=source+serif+
+            pro&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="site-id">
+            <div class="logo">
+                <a href="index.html"><img src="img/personal_logo_black.png" alt="Test Logo"></a>
+            </div>
+            <!-- <h1 class="hide-visually"><a href="index.html">Personal Framework</a></h1> -->
+        </div>
+
+        <nav class="site-nav" data-navstate="close">
+            <div class="menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="panels">
+                <div class="panel panel1">
+                    <img src="img/overlay-pic.jpg" alt="Anthony Diep">
+                    <ul>
+                        <li>Anthony Diep</li>
+                        <li>Honolulu | Hawaii</li>
+                        <li>Instagram</li>
+                        <li>Linkedin</li>
+                    </ul>
+                </div>
+                <div class="panel panel2">
+                    <div class="panel2child">
+                        <ul class="overlaymenu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html#projects">Projects</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="site-main">
+
+        <!-- <section class="full-width">
+            <img src="img/logo-hero.jpg" alt="placeholder" class="scale-with-grid" />
+        </section> -->
+
+
+
+        <section class="project-hero animate-on-scroll">
+            <div class="project-container">
+                <div class="child1">
+                    <img src="img/verizon-hero.jpg" alt="placeholder" class="scale-with-grid" />
+                </div>
+                <div class="child2">
+                    <div class="project-name">
+                        <h1>VERIZON</h1>
+                        <p>Logo Design</p>
+                    </div>
+                </div>
+                <div class="child3">
+                    <p class="project-body">
+                        <strong>Client:</strong> (Student Project)
+                        <br />
+                        <strong>Service:</strong> Logo Design
+                        <br />
+                        <strong>Skills:</strong> Illustrator
+                    </p>
+                </div>
+
+
+                <!-- <section id="Section01" class="animate-on-scroll">
+
+            <div class="project-container"> -->
+                <div class="child4">
+                    <img src="img/verizon-logo.jpg" alt="Placeholder">
+                </div>
+                <div class="child5">
+                    <h3>Concept</h3>
+                    <p>Verizon is a telecommunication company. The redesign is
+                        inspired by the origin of the company name deriving from the
+                        latin word “veritas”, meaning truth, and the word “horizon”. The
+                        name combination is formed to show the company’s integrity
+                        and passion.</p>
+                </div>
+
+                <!-- </div>
+        </section> -->
+
+                <!-- <section id="Section02" class="animate-on-scroll">
+            <div class="container"> -->
+
+                <div class="child6">
+                    <img src="img/verizon-shirt-mockup.jpg" alt="Placeholder">
+                </div>
+                <div class="child7">
+                    <h3>Goals</h3>
+                    <p>Modernize and bring more personality to the logo so
+                        it appeals to younger market and further distinct
+                        itself from competitors.</p>
+                </div>
+                <!-- </div>
+        </section> -->
+
+                <!-- <section id="Section03" class="animate-on-scroll">
+            <div class="container"> -->
+
+                <div class="child8">
+                    <img src="img/verizon-bag-mockup.jpg" alt="Placeholder">
+                </div>
+                <div class="child9">
+                    <h3>Result</h3>
+                    <p>An updated logo that takes into consideration
+                        Verizon’s history and origin while maintaining its
+                        iconic red with a gradient effect.</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <nav class="site-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <!-- SMOOTH SCROLL BY CHRIS FERDINANDI -->
+    <script src="js/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 800,
+            speedAsDuration: true
+        });
+    </script>
+
+    <!-- Main JS -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
