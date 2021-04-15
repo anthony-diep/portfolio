@@ -1,7 +1,7 @@
 /* RESET BODY */
 body {
     margin: 0;
-    overflow-x: hidden;
+    // overflow-x: hidden;
 }
 
 /* CONTAINER */
@@ -93,6 +93,7 @@ body {
     // max-width: calc(100% - ($gridgap * 2));
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     .project-body {
         color: white;
         background-color: grey;

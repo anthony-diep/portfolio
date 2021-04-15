@@ -2,6 +2,10 @@
 
 $gridgap: 2%;
 
+.site-main {
+    overflow-x: hidden;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;

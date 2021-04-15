@@ -234,7 +234,6 @@ img {
 /* RESET BODY */
 body {
   margin: 0;
-  overflow-x: hidden;
 }
 
 /* CONTAINER */
@@ -320,6 +319,7 @@ body {
   max-width: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 .project-container .project-body {
   color: white;
@@ -389,6 +389,10 @@ body {
   }
 }
 /* SEMANTIC GRID */
+.site-main {
+  overflow-x: hidden;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -547,9 +551,6 @@ section .surfriders-section {
 }
 
 /* PROJECT HERO SECTION */
-.project-hero {
-  padding: 0;
-}
 .project-hero .project-content {
   max-width: 1000px;
   position: relative;
