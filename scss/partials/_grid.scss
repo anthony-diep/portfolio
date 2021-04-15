@@ -30,6 +30,22 @@ $gridgap: 2%;
         align-items: flex-start;
     }
 
+    &.nogap {
+        margin-left: 0;
+        margin-right: 0;
+        > * {
+            margin: 0;
+        }
+        @media (min-width: $breakpoint-small) {
+            .one-third {
+                width: 33.333%;
+            }
+            .two-thirds {
+                width: 66.666%;
+            }
+        }
+    }
+
     @media (min-width: $breakpoint-small) {
         > * {
             flex-grow: 0;

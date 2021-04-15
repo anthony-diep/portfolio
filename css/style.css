@@ -326,7 +326,11 @@ body {
   background-color: grey;
   margin: 0;
   padding: 3em;
-  max-width: 60%;
+  max-width: 80%;
+}
+.project-container .project-name {
+  padding: 2em;
+  max-width: 30em;
 }
 .project-container .project-name h1 {
   font-size: 6em;
@@ -340,7 +344,7 @@ body {
 }
 .project-container .project-name h2 {
   font-size: 4em;
-  max-width: 10em;
+  max-width: none;
   color: black;
   font-family: poiret-one, sans-serif;
 }
@@ -350,13 +354,16 @@ body {
   font-family: "oswald";
 }
 .project-container .project-name p {
-  max-width: 30em;
+  max-width: none;
 }
-.project-container .project-hero-img img {
-  width: 85%;
-  margin-right: 0;
-  margin-left: auto;
-  display: block;
+.project-container .project-name h2,
+.project-container .project-name p {
+  width: 100%;
+}
+.project-container .swapped .project-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 /* SURFRIDERS */
@@ -389,7 +396,6 @@ body {
   margin-right: -2%;
   align-items: center;
   margin-bottom: 1em;
-  z-index: 19;
 }
 .row > * {
   margin: 1%;
@@ -409,6 +415,21 @@ body {
 }
 .row.align-top {
   align-items: flex-start;
+}
+.row.nogap {
+  margin-left: 0;
+  margin-right: 0;
+}
+.row.nogap > * {
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .row.nogap .one-third {
+    width: 33.333%;
+  }
+  .row.nogap .two-thirds {
+    width: 66.666%;
+  }
 }
 @media (min-width: 768px) {
   .row > * {
@@ -528,7 +549,20 @@ section .surfriders-section {
 /* PROJECT HERO SECTION */
 .project-hero {
   padding: 0;
-  display: grid;
+}
+.project-hero .project-content {
+  max-width: 1000px;
+  position: relative;
+  top: -300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+.project-hero .project-hero-img {
+  text-align: right;
+}
+.project-hero .project-hero-img img {
+  width: 80%;
 }
 .project-hero h1 {
   margin-bottom: 0.25em;
