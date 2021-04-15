@@ -211,10 +211,14 @@
 
 .site-header[data-navstate="open"] .panels .panel2 {
     visibility: visible;
+    // position: static;
 }
 
 .site-header[data-navstate="closed"] .panels .panel2 {
     visibility: hidden;
+    // position: absolute;
+    // top: -999px;
+    // left: -999px;
 }
 
 /* FOOTER SITE-NAV */

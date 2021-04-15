@@ -61,7 +61,7 @@ section {
     // text-align: center;
     padding: 2em 0;
     color: white;
-    min-height: 100vh; //This increases the height of the hero
+    min-height: 101vh; //This increases the height of the hero
     display: grid;
     place-items: center; //These vertically center items/text in the hero
 
@@ -82,13 +82,11 @@ section {
 
 /* PROJECT HERO SECTION */
 .project-hero {
-    background: white;
     // text-align: center;
-    padding: 2em 0;
-    color: black;
-    min-height: 100vh; //This increases the height of the hero
+    padding: 0;
+    // min-height: 100vh; //This increases the height of the hero
     display: grid;
-    place-items: center; //These vertically center items/text in the hero
+    // place-items: center; //These vertically center items/text in the hero
 
     .container {
         // width: 100%; //This overrides the container
@@ -100,9 +98,9 @@ section {
         max-width: 900px;
         // display: flex;
     }
-    p {
-        margin: 1em auto;
-    }
+    // p {
+    //     margin: 1em auto;
+    // }
 }
 
 /* PROJECT PAGE SECTION */
