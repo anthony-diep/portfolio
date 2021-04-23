@@ -15,6 +15,10 @@
     <!-- MAIN CSS FILE -->
     <link href="css/style.css" rel="stylesheet" type="text/css" />
 
+    <!-- ADOBE FONTS -->
+    <link rel="stylesheet" href="https://use.typekit.net/ode5myy.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kuv8zzd.css">
+
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=source+sans
             +pro:ital,wght@0,400;0,700;1,400;1,700&family=source+serif+
@@ -27,7 +31,7 @@
 
 <body>
 
-    <header class="site-header">
+    <header class="site-header" data-navstate="closed">
         <div class="site-id">
             <div class="logo">
                 <a href="index.html"><img src="img/personal_logo_black.png" alt="Test Logo"></a>
@@ -68,21 +72,17 @@
 
     <main class="site-main">
 
-        <!-- <section class="full-width">
-            <img src="img/logo-hero.jpg" alt="placeholder" class="scale-with-grid" />
-        </section> -->
-
-
-
-        <section class="project-hero animate-on-scroll">
-            <div class="project container">
-                <img src="img/verizon-shirt-mockup.jpg" alt="placeholder" class="scale-with-grid" />
-                <!-- <h3 class="subheader">Redesign and Original</h3> -->
-                <h3 class="subheadline">
-                    <p>Logo Design</p>
-                </h3>
-                <div class="row">
-                    <p>
+        <section class="project-hero">
+            <div class="project-container">
+                <div class="project-hero-img">
+                    <img src="img/city-logo-flag.jpg" alt="placeholder" />
+                </div>
+                <div class="project-content">
+                    <div class="project-name">
+                        <h1>VERIZON</h1>
+                        <h3>Logo Design</h3>
+                    </div>
+                    <p class="project-body">
                         <strong>Client:</strong> (Student Project)
                         <br />
                         <strong>Service:</strong> Logo Design
@@ -93,60 +93,59 @@
             </div>
         </section>
 
-        <section id="Section01" class="animate-on-scroll">
 
-            <div class="container">
-                <h1 class="headline">City Logo</h1>
-                <div class="row">
-                    <div class="one-half">
+        <section class="animate-on-scroll">
+            <div class="project-container">
+                <div class="row nogap">
+                    <div class="two-thirds">
                         <img src="img/city-logo.jpg" alt="Placeholder">
                     </div>
-                    <div class="one-half">
-                        <h3>Concept</h3>
+                    <div class="one-third project-name">
+                        <h2>CONCEPT</h2>
+                        <h3>Lorem Ipsum</h3>
                         <p>Kuala Lumpur is the capital of Malaysia, a country in Southeast
                             Asia. The design concept were inspired by the tiger as a symbol
                             of Malaysia’s monarch history and the royal family’s current
                             resident in Kuala Lumpur. The city’s tropical weather and its
                             collection of gardens were also considered.</p>
-                        <a href="#" class="button">Button</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="Section02" class="animate-on-scroll">
-            <div class="container">
-
-                <div class="row swapped">
-                    <div class="one-half">
+        <section class="animate-on-scroll">
+            <div class="project-container">
+                <div class="row swapped nogap">
+                    <div class="one-third">
                         <img src="img/city-logo-flag.jpg" alt="Placeholder">
                     </div>
-                    <div class="one-half">
-                        <h3>Goals</h3>
+                    <div class="two-thirds project-name">
+                        <h2>GOAL</h2>
+                        <h3>Lorem Ipsum</h3>
                         <p>Create a logo that symbolizes the city’s cultural
                             heritage but also a welcoming graphic to promote
                             tourism.</p>
-                        <a href="#" class="button">Button</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="Section03" class="animate-on-scroll">
-            <div class="container">
-
+        <section class="animate-on-scroll">
+            <div class="project-container">
                 <div class="row stacked">
-                    <div class="one-half animate-scale-in">
+                    <div class="one-whole">
                         <img src="img/city-logo-sign.jpg" alt="Placeholder">
                     </div>
-                    <div class="one-half animate-slide-up">
-                        <h3>Result</h3>
+
+                    <div class="one-half project-name">
+                        <h2>RESULT</h2>
+                        <h3>Lorem Ipsum</h3>
                         <p>A mark that symbolizes the city’s cultural and
                             monarchy heritage while also reflects its modern
                             development.</p>
-                        <a href="#" class="button">Button</a>
                     </div>
                 </div>
+            </div>
         </section>
 
     </main>
@@ -154,7 +153,7 @@
     <footer class="site-footer">
         <nav class="site-nav">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#projects">Projects</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
