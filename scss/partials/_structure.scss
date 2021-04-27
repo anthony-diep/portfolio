@@ -50,6 +50,10 @@ section {
     display: grid;
     align-items: center;
 
+    .first-row-section {
+        padding: 0;
+    }
+
     .surfriders-section {
         padding: 4em 0 2em 0;
     }
@@ -64,6 +68,7 @@ section {
     min-height: 101vh; //This increases the height of the hero
     display: grid;
     place-items: center; //These vertically center items/text in the hero
+    margin-bottom: 2em;
 
     .container {
         // width: 100%; //This overrides the container
@@ -78,6 +83,18 @@ section {
     p {
         margin: 1em 0 1em 0;
     }
+}
+
+/* CONTACT SECTION */
+.contact {
+    background: black;
+    // text-align: center;
+    padding: 2em 0;
+    color: white;
+    min-height: 101vh; //This increases the height of the hero
+    display: grid;
+    place-items: center; //These vertically center items/text in the hero
+    margin-top: 2em;
 }
 
 /* PROJECT HERO SECTION */
