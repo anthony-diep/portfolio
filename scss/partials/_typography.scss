@@ -62,7 +62,11 @@ h3 {
 
 /* LIMIT NUMBER OF CHARACTERS PER LINE */
 p {
-    max-width: 40em;
+    max-width: 23em;
+    span {
+        font-size: 1.25em;
+        font-family: "oswald";
+    }
 }
 
 /* LINKS */
@@ -114,19 +118,23 @@ hr {
 
 /* PROJECT PAGE TYPE */
 .projects-content {
+    color: white;
+    font-size: clamp(1em, 5vw, 6em);
+    font-family: "oswald";
     margin: auto;
     max-width: 75%;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     height: 100%;
 }
 
-.projects-content-title {
-    font-size: 5em;
-    font-size: clamp(1em, 5vw, 5em);
-    font-family: "oswald";
-}
+// .projects-content-title {
+//     font-size: 5em;
+//     font-size: clamp(1em, 5vw, 5em);
+//     font-family: "oswald";
+// }
 
 .surfriders-container {
     max-width: 45%;
