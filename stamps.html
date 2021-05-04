@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>My Portfolio</title>
+    <title>Stamps</title>
     <meta name="description" content="A minimal, simple portfolio site." />
 
     <!-- VIEWPORT FOR MOBILE -->
@@ -14,6 +14,10 @@
 
     <!-- MAIN CSS FILE -->
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <!-- ADOBE FONTS -->
+    <link rel="stylesheet" href="https://use.typekit.net/ode5myy.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kuv8zzd.css">
 
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=source+sans
@@ -68,20 +72,17 @@
 
     <main class="site-main">
 
-        <!-- <section class="hero full-width">
-            <img src="img/placeholder-1x1-art1.jpg" alt="placeholder" class="scale-with-grid" />
-        </section> -->
-
-        <img src="img/stamp-hero.jpg" alt="placeholder" class="scale-with-grid" />
-
-        <section>
-            <div class="container">
-                <!-- <h3 class="subheader">Redesign and Original</h3> -->
-                <h3 class="subheadline">
-                    <p>Stationary Design</p>
-                </h3>
-                <div class="row">
-                    <p>
+        <section class="project-hero">
+            <div class="project-container">
+                <div class="project-hero-img">
+                    <img src="img/stamp-hero.jpg" alt="placeholder" />
+                </div>
+                <div class="project-hero-content-short">
+                    <div class="project-name">
+                        <h1>STAMPS</h1>
+                        <h3>Postage Design</h3>
+                    </div>
+                    <p class="project-body">
                         <strong>Client:</strong> (Student Project)
                         <br />
                         <strong>Service:</strong> Postage Design
@@ -92,63 +93,95 @@
             </div>
         </section>
 
-        <section id="Section01" class="animate-on-scroll">
-
-            <div class="container">
-
-                <div class="row">
-                    <div class="one-half">
-                        <img src="img/stamp01.jpg" alt="Placeholder">
-                    </div>
-                    <div class="one-half">
-                        <h3>Concept</h3>
-                        <p>Case Study Houses were architectural projects that ran duirng
-                            the mid-90s as a mean to design affordable homes for the
-                            sudden boom in demand with soldiers returning from World
-                            War II. The idea of the design was to generate colorful schemes
-                            that reflects the era and the seemingly simple but complex
-                            design of the architectures.</p>
-                        <a href="#" class="button">Button</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="Section02" class="animate-on-scroll">
-            <div class="container">
-
-                <div class="row swapped">
-                    <div class="one-half">
+        <section class="animate-on-scroll">
+            <div class="project-container">
+                <div class="row nogap">
+                    <div class="two-thirds">
                         <img src="img/stamp02.jpg" alt="Placeholder">
                     </div>
-                    <div class="one-half">
-                        <h3>Goals</h3>
-                        <p>Emphasize the uniqueness of each house in a clear
-                            manner that is eye-catching even on the size of a
-                            stamp.</p>
-                        <a href="#" class="button">Button</a>
+                    <div class="one-third project-name">
+                        <h2>CONCEPT</h2>
+                        <h3>Lorem Ipsum</h3>
+                        <p>Case Study Houses were architectural projects that ran duirng the mid-90s as a mean to design
+                            affordable homes for the
+                            sudden boom in demand with soldiers returning from World War II. The idea of the design was
+                            to generate colorful schemes
+                            that reflects the era and the seemingly simple but complex design of the architectures.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="Section03" class="animate-on-scroll">
-            <div class="container">
-
-                <div class="row stacked">
-                    <div class="one-half animate-scale-in">
-                        <img src="img/stamp03.png" alt="Placeholder">
+        <section class="animate-on-scroll">
+            <div class="project-container">
+                <div class="row swapped nogap">
+                    <div class="one-third">
+                        <img src="img/stamp01.jpg" alt="Placeholder">
                     </div>
-                    <div class="one-half animate-slide-up">
-                        <h3>Result</h3>
-                        <p>Vibrant colored stamps with a retro tone. The Case
-                            Study Houses are illustrated to focus on the structural pieces that can identify each
-                            specific house.</p>
-                        <a href="#" class="button">Button</a>
+                    <div class="two-thirds project-name">
+                        <h2>GOAL</h2>
+                        <h3>Lorem Ipsum</h3>
+                        <p>Emphasize the uniqueness of each house in a clear manner that is eye-catching even on the
+                            size of a stamp.</p>
                     </div>
                 </div>
+            </div>
         </section>
+
+        <section class="animate-on-scroll">
+            <div class="project-container">
+                <div class="row stacked">
+                    <div class="centered">
+                        <img src="img/stamp03.png" alt="Placeholder">
+                    </div>
+
+                    <div class="one-half project-name">
+                        <h2>RESULT</h2>
+                        <h3>Lorem Ipsum</h3>
+                        <p>Vibrant colored stamps with a retro tone. The Case Study Houses are illustrated to focus on
+                            the structural pieces that
+                            can identify each specific house.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <hr />
+
+    <section class="animate-on-scroll">
+
+        <h3 class="text-centered">My Other Projects</h3>
+
+        <ul class="mini-projects-menu">
+            <li><a href="surfriders.html">
+                    <img src="img/mini_court_with_logo.jpg" alt="Placeholder">
+                </a></li>
+            <li><a href="formosa.html">
+                    <img src="img/mini_formosa-tile.jpg" alt="Placeholder">
+                </a></li>
+            <li><a href="verizon.html">
+                    <img src="img/mini_verizon-tile.jpg" alt="Placeholder">
+                </a></li>
+            <li><a href="kl.html">
+                    <img src="img/mini_citylogo-tile.jpg" alt="Placeholder">
+                </a></li>
+            <li><a href="bookcover.html">
+                    <img src="img/mini_bookcover.jpg" alt="Placeholder">
+                </a></li>
+            <li><a href="stamps.html">
+                    <img src="img/mini_stamp-tile02.jpg" alt="Placeholder">
+                </a></li>
+            <li><a href="loki.html">
+                    <img src="img/mini_loki-tile.jpg" alt="Placeholder">
+                </a></li>
+            <li><a href="website.html">
+                    <img src="img/mini_website-tile.jpg" alt="Placeholder">
+                </a></li>
+        </ul>
+
+    </section>
 
     <footer class="site-footer">
         <nav class="site-nav">

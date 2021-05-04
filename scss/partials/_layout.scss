@@ -108,6 +108,9 @@ body {
             font-size: 6em;
             margin: 0;
             color: black;
+            font-family: raleway, sans-serif;
+            font-weight: 400;
+            font-style: normal;
         }
         h1 span {
             font-size: 2em;
@@ -120,14 +123,19 @@ body {
             max-width: none;
             color: black;
             margin: 0;
-            font-family: poiret-one, sans-serif;
+            font-family: quicksand, sans-serif;
+            font-weight: 400;
+            font-style: normal;
         }
+
         h3 {
             font-size: 1.5em;
             max-width: none;
             color: rgb(101, 101, 101);
             margin: 0 0 1.5em 0;
-            font-family: poiret-one, sans-serif;
+            font-family: quicksand, sans-serif;
+            font-weight: 300;
+            font-style: normal;
         }
         a {
             color: $color-accent;
@@ -136,6 +144,7 @@ body {
         }
         p {
             max-width: none;
+            font-size: 1.25em;
         }
         h2,
         p {
@@ -146,12 +155,6 @@ body {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-    }
-
-    /* SHORTCUT MENU */
-    .mini-projects-menu {
-        display: flex;
-        margin: 2em auto;
     }
 
     // @media (min-width: 768px) {
@@ -210,6 +213,23 @@ body {
     //         grid-row: 11 / span 2;
     //     }
     // }
+}
+
+/* SHORTCUT MENU */
+.mini-projects-menu {
+    display: flex;
+    // flex-wrap: wrap;
+    margin: 2em auto;
+    padding: 0;
+    list-style: none;
+    overflow-x: auto;
+    width: 100%;
+    justify-content: center;
+    li {
+        margin: 1%;
+        padding: 0;
+        min-width: 200px;
+    }
 }
 
 /* SURFRIDERS */

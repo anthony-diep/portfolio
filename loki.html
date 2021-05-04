@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>My Portfolio</title>
+    <title>Surfriders</title>
     <meta name="description" content="A minimal, simple portfolio site." />
 
     <!-- VIEWPORT FOR MOBILE -->
@@ -15,13 +15,19 @@
     <!-- MAIN CSS FILE -->
     <link href="css/style.css" rel="stylesheet" type="text/css" />
 
+    <!-- ADOBE FONTS -->
+    <link rel="stylesheet" href="https://use.typekit.net/ode5myy.css">
+
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=source+sans
-            +pro:ital,wght@0,400;0,700;1,400;1,700&family=source+serif+
-            pro&display=swap" rel="stylesheet">
+                +pro:ital,wght@0,400;0,700;1,400;1,700&family=source+serif+
+                pro&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
 
 </head>
 
@@ -68,18 +74,17 @@
 
     <main class="site-main">
 
-        <!-- <section class="full-width">
-            <img src="img/loki_banner.jpg" alt="placeholder" class="scale-with-grid" />
-        </section> -->
-
-        <section class="project-section">
-            <div class="container">
-                <!-- <h3 class="subheader">Redesign and Original</h3> -->
-                <h3 class="subheadline">
-                    <p>UI Design</p>
-                </h3>
-                <div class="row">
-                    <p>
+        <section class="project-hero">
+            <div class="project-container">
+                <div class="project-hero-img">
+                    <img src="img/loki-hero.jpg" alt="placeholder" />
+                </div>
+                <div class="project-hero-content-short">
+                    <div class="project-name">
+                        <h1>Loki App</h1>
+                        <h3>UI Design</h3>
+                    </div>
+                    <p class="project-body">
                         <strong>Client:</strong> (Student Project)
                         <br />
                         <strong>Service:</strong> Application Design
@@ -90,68 +95,105 @@
             </div>
         </section>
 
-        <section id="Section01" class="animate-on-scroll">
-
-            <div class="container">
-
-                <div class="row">
-                    <div class="one-half">
-                        <img src="img/loki01.jpg" alt="Placeholder">
+        <section class="animate-on-scroll">
+            <div class="project-container">
+                <div class="row nogap">
+                    <div class="two-thirds">
+                        <img src="img/loki02.jpg" alt="Placeholder">
                     </div>
-                    <div class="one-half">
-                        <h3>Concept</h3>
-                        <p>The idea behind Loki came from being an avid user of Shazam’s sound sampling function. How
-                            useful would it be to
-                            have an app that perform similarly but with images? Think about the times you had to search
-                            a broad term on Google
-                            images to find the location of an image you found. Loki was designed to reduce time and
-                            frustration while achieving
-                            similar or better result.</p>
-                        <a href="#" class="button">Button</a>
+                    <div class="one-third project-name">
+                        <h2>CONCEPT</h2>
+                        <h3>Lorem Ipsum</h3>
+                        <p>
+                            The idea behind Loki came from being an avid user of Shazam’s sound sampling function. How
+                            useful would it be to have an
+                            app that perform similarly but with images? Think about the times you had to search a broad
+                            term on Google images to
+                            find the location of an image you found. Loki was designed to reduce time and frustration
+                            while achieving similar or
+                            better result.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="Section02" class="animate-on-scroll">
-            <div class="container">
-
-                <div class="row swapped">
-                    <div class="one-half">
-                        <img src="img/loki02.jpg" alt="Placeholder">
+        <section class="animate-on-scroll">
+            <div class="project-container">
+                <div class="row swapped nogap">
+                    <div class="one-third">
+                        <img src="img/loki01.jpg" alt="Placeholder">
                     </div>
-                    <div class="one-half">
-                        <h3>Goals</h3>
+                    <div class="two-thirds project-name">
+                        <h2>GOAL</h2>
+                        <h3>Lorem</h3>
                         <p>The technology of today’s smartphones and tablets put human just a tab away from a
                             never-ending flow of information. I
                             wanted to apply this notion in designing an app that is unique but yet so simple that it
                             literally can be cycled through
                             with a few tabs. A complex idea made so simple that it will be your grandpa’s favorite app.
                         </p>
-                        <a href="#" class="button">Button</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="Section03" class="animate-on-scroll">
-            <div class="container">
-
+        <section class="animate-on-scroll">
+            <div class="project-container">
                 <div class="row stacked">
-                    <div class="one-half animate-scale-in">
-                        <img src="http://via.placeholder.com/1600x1200" alt="Placeholder">
+                    <div class="centered">
+                        <video src="video/loki-home-animation.mp4" autoplay loop>
+                        </video>
                     </div>
-                    <div class="one-half animate-slide-up">
-                        <h3>Result</h3>
+
+                    <div class="one-half project-name">
+                        <h2>RESULT</h2>
+                        <h3>Lorem Ipsum</h3>
                         <p>A user-friendly interface that aims to perform the intended tasks in the simplest of manner
                             that still produce user
                             engagement at a high rate.</p>
-                        <a href="#" class="button">Button</a>
                     </div>
                 </div>
+            </div>
         </section>
 
     </main>
+
+    <hr />
+
+    <section class="animate-on-scroll">
+
+
+        <h3 class="text-centered">My Other Projects</h3>
+
+        <ul class="mini-projects-menu">
+            <li><a href="surfriders.html">
+                    <img src="img/mini_court_with_logo.jpg" alt="Placeholder">
+                </a></li>
+            <li><a href="formosa.html">
+                    <img src="img/mini_formosa-tile.jpg" alt="Placeholder">
+                </a></li>
+            <li><a href="verizon.html">
+                    <img src="img/mini_verizon-tile.jpg" alt="Placeholder">
+                </a></li>
+            <li><a href="kl.html">
+                    <img src="img/mini_citylogo-tile.jpg" alt="Placeholder">
+                </a></li>
+            <li><a href="bookcover.html">
+                    <img src="img/mini_bookcover.jpg" alt="Placeholder">
+                </a></li>
+            <li><a href="stamps.html">
+                    <img src="img/mini_stamp-tile02.jpg" alt="Placeholder">
+                </a></li>
+            <li><a href="loki.html">
+                    <img src="img/mini_loki-tile.jpg" alt="Placeholder">
+                </a></li>
+            <li><a href="website.html">
+                    <img src="img/mini_website-tile.jpg" alt="Placeholder">
+                </a></li>
+        </ul>
+
+    </section>
 
     <footer class="site-footer">
         <nav class="site-nav">
