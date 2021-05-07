@@ -119,6 +119,12 @@ hr {
   width: 40%;
 }
 
+hr.orange-line {
+  width: 12%;
+  background-color: #ff5722;
+  height: 6px;
+}
+
 /* TYPE SPECIMEN */
 .headline {
   font-size: 4em;
@@ -162,17 +168,20 @@ hr {
   height: 100%;
 }
 
+/* SURFRIDERS TYPOGRAHPY */
 .surfriders-container {
   max-width: 45%;
   margin: 0 auto;
   padding: 0 5em;
 }
-.surfriders-container .surfriders-body {
-  color: rgba(0, 0, 0, 0.8);
-  padding: 3em;
-  max-width: 80%;
+
+.surfriders-container-body {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 0 5em;
 }
-.surfriders-container .surfriders-center-type h1 {
+
+.surfriders-center-type h1 {
   font-size: 6em;
   line-height: 0.8;
   font-family: "abel";
@@ -180,42 +189,54 @@ hr {
   place-items: center;
   margin-bottom: 0.15em;
 }
-.surfriders-container .surfriders-center-type h1 span {
+.surfriders-center-type h1 span {
   font-family: "badaboom-pro", impact, sans-serif;
 }
-.surfriders-container .surfriders-center-type h2 {
+.surfriders-center-type h2 {
   color: rgba(0, 0, 0, 0.8);
   display: grid;
   place-items: center;
+  font-family: utopia-std-headline, serif;
+  font-weight: 50;
+  font-style: normal;
+  letter-spacing: 8px;
+  margin: 4em 0;
 }
-.surfriders-container .surfriders-center-type h2 span {
+.surfriders-center-type h2 span {
   color: white;
 }
-.surfriders-container .surfriders-center-type h3 {
+.surfriders-center-type h3 {
   font-size: 2.25em;
   max-width: 10em;
   font-family: "oswald";
   margin: 0;
 }
-.surfriders-container .surfriders-center-type a {
+.surfriders-center-type h4 {
+  font-size: 2em;
+  font-family: "Squada One", cursive;
+}
+.surfriders-center-type h4 span {
+  font-family: "badaboom-pro", impact, sans-serif;
+}
+.surfriders-center-type h4.abel {
+  font-family: "Abel", sans-serif;
+}
+.surfriders-center-type a {
   color: #8c0000;
   font-size: 2.75em;
   font-family: "oswald";
 }
-.surfriders-container .surfriders-center-type p {
+.surfriders-center-type p {
   color: rgba(0, 0, 0, 0.8);
   margin-bottom: 2em;
+  max-width: 35em;
 }
-.surfriders-container .surfriders-center-type p span {
+.surfriders-center-type p span {
   display: grid;
   place-items: center;
   color: grey;
   margin-bottom: 2em;
-}
-.surfriders-container .surfriders-img {
-  display: grid;
-  place-items: center;
-  margin-bottom: 1em;
+  padding-top: 1em;
 }
 
 /* BUTTONS */
@@ -408,11 +429,6 @@ body {
 }
 
 /* SURFRIDERS */
-#demobox {
-  background-color: #041e1b;
-  padding: 3em;
-}
-
 /* MEDIA QUERIES */
 /* RESPONSIVE TYPOGRAPHY */
 body {
@@ -669,7 +685,14 @@ section .surfriders-section {
 }
 
 .full-width img {
-  width: 80%;
+  width: 100%;
+}
+
+/* SURFRIDERS IMAGE */
+.surfriders-img {
+  display: grid;
+  place-items: center;
+  margin-bottom: 3em;
 }
 
 .hide-visually {
@@ -788,7 +811,6 @@ section .surfriders-section {
 }
 .site-header[data-navstate=open] .menu-button span {
   background: #fff;
-  transition-delay: 0.5s;
 }
 .site-header[data-navstate=closed] .site-id {
   opacity: 1;
@@ -1022,7 +1044,7 @@ ANIMATIONS SCROLL TRIGGERED ANIMATIONS .animate-on-scroll,
   overflow: hidden;
   position: absolute;
   padding-left: 0.5rem;
-  left: 220px;
+  left: 200px;
   animation: openclose 7s ease-in-out infinite;
 }
 

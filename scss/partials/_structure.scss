@@ -186,5 +186,12 @@ section {
 }
 
 .full-width img {
-    width: 80%;
+    width: 100%;
+}
+
+/* SURFRIDERS IMAGE */
+.surfriders-img {
+    display: grid;
+    place-items: center;
+    margin-bottom: 3em;
 }

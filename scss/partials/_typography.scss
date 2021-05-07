@@ -93,6 +93,12 @@ hr {
     width: 40%;
 }
 
+hr.orange-line {
+    width: 12%;
+    background-color: #ff5722;
+    height: 6px;
+}
+
 /* TYPE SPECIMEN */
 .headline {
     font-size: 4em;
@@ -142,61 +148,76 @@ hr {
 //     font-family: "oswald";
 // }
 
+/* SURFRIDERS TYPOGRAHPY */
 .surfriders-container {
     max-width: 45%;
     margin: 0 auto;
     padding: 0 5em;
+}
 
-    .surfriders-body {
-        color: $color-text-body;
-        padding: 3em;
-        max-width: 80%;
-    }
-    .surfriders-center-type {
-        h1 {
-            font-size: 6em;
-            line-height: 0.8;
-            font-family: "abel";
-            display: grid;
-            place-items: center;
-            margin-bottom: 0.15em;
-        }
-        h1 span {
+.surfriders-container-body {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 0 5em;
+}
+
+.surfriders-center-type {
+    h1 {
+        font-size: 6em;
+        line-height: 0.8;
+        font-family: "abel";
+        display: grid;
+        place-items: center;
+        margin-bottom: 0.15em;
+        span {
             font-family: "badaboom-pro", impact, sans-serif;
         }
-        h2 {
-            color: $color-text-body;
-            display: grid;
-            place-items: center;
-        }
-        h2 span {
+    }
+    h2 {
+        color: $color-text-body;
+        display: grid;
+        place-items: center;
+        font-family: utopia-std-headline, serif;
+        font-weight: 50;
+        font-style: normal;
+        letter-spacing: 8px;
+        margin: 4em 0;
+        span {
             color: white;
         }
-        h3 {
-            font-size: 2.25em;
-            max-width: 10em;
-            font-family: "oswald";
-            margin: 0;
+    }
+    h3 {
+        font-size: 2.25em;
+        max-width: 10em;
+        font-family: "oswald";
+        margin: 0;
+    }
+    h4 {
+        font-size: 2em;
+        font-family: "Squada One", cursive;
+        span {
+            font-family: "badaboom-pro", impact, sans-serif;
         }
-        a {
-            color: $color-accent;
-            font-size: 2.75em;
-            font-family: "oswald";
-        }
-        p {
-            color: $color-text-body;
-            margin-bottom: 2em;
-        }
-        p span {
+    }
+    h4.abel {
+        font-family: "Abel", sans-serif;
+    }
+
+    a {
+        color: $color-accent;
+        font-size: 2.75em;
+        font-family: "oswald";
+    }
+    p {
+        color: $color-text-body;
+        margin-bottom: 2em;
+        max-width: 35em;
+        span {
             display: grid;
             place-items: center;
             color: grey;
             margin-bottom: 2em;
+            padding-top: 1em;
         }
-    }
-    .surfriders-img {
-        display: grid;
-        place-items: center;
-        margin-bottom: 1em;
     }
 }
