@@ -99,6 +99,12 @@ hr.orange-line {
     height: 6px;
 }
 
+hr.blue-line {
+    width: 12%;
+    background-color: #03f0ff;
+    height: 6px;
+}
+
 /* TYPE SPECIMEN */
 .headline {
     font-size: 4em;
@@ -201,6 +207,84 @@ hr.orange-line {
     }
     h4.abel {
         font-family: "Abel", sans-serif;
+    }
+
+    a {
+        color: $color-accent;
+        font-size: 2.75em;
+        font-family: "oswald";
+    }
+    p {
+        color: $color-text-body;
+        margin-bottom: 2em;
+        max-width: 35em;
+        span {
+            display: grid;
+            place-items: center;
+            color: grey;
+            margin-bottom: 2em;
+            padding-top: 1em;
+        }
+    }
+}
+
+/* FORMOSA TYPOGRAHPY */
+.formosa-container {
+    max-width: 45%;
+    margin: 0 auto;
+    padding: 0 5em;
+}
+
+.formosa-container-body {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 0 5em;
+}
+
+.formosa-center-type {
+    h1 {
+        color: #140453;
+        font-size: 6em;
+        line-height: 0.8;
+        font-family: "Peignot LT Std";
+        display: grid;
+        place-items: center;
+        margin-bottom: 0.15em;
+        span {
+            font-family: "Yananeska Personal Use", sans-serif;
+            font-size: 20px;
+        }
+    }
+    h2 {
+        color: #140453;
+        display: grid;
+        place-items: center;
+        line-height: 0.8;
+        font-family: "Peignot LT Std";
+        font-size: 4em;
+        font-style: normal;
+        letter-spacing: 8px;
+        margin: 3em 0;
+        span {
+            color: white;
+        }
+    }
+    h3 {
+        font-size: 2.25em;
+        max-width: 10em;
+        font-family: "oswald";
+        margin: 0;
+    }
+    h4 {
+        font-size: 2em;
+        font-family: "Squada One", cursive;
+        span {
+            font-family: "Peignot LT Std";
+        }
+    }
+    h4.yananeska {
+        font-size: 1.25em;
+        font-family: "Yananeska Personal Use", sans-serif;
     }
 
     a {

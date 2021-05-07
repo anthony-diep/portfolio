@@ -125,6 +125,12 @@ hr.orange-line {
   height: 6px;
 }
 
+hr.blue-line {
+  width: 12%;
+  background-color: #03f0ff;
+  height: 6px;
+}
+
 /* TYPE SPECIMEN */
 .headline {
   font-size: 4em;
@@ -232,6 +238,81 @@ hr.orange-line {
   max-width: 35em;
 }
 .surfriders-center-type p span {
+  display: grid;
+  place-items: center;
+  color: grey;
+  margin-bottom: 2em;
+  padding-top: 1em;
+}
+
+/* FORMOSA TYPOGRAHPY */
+.formosa-container {
+  max-width: 45%;
+  margin: 0 auto;
+  padding: 0 5em;
+}
+
+.formosa-container-body {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 0 5em;
+}
+
+.formosa-center-type h1 {
+  color: #140453;
+  font-size: 6em;
+  line-height: 0.8;
+  font-family: "Peignot LT Std";
+  display: grid;
+  place-items: center;
+  margin-bottom: 0.15em;
+}
+.formosa-center-type h1 span {
+  font-family: "Yananeska Personal Use", sans-serif;
+  font-size: 20px;
+}
+.formosa-center-type h2 {
+  color: #140453;
+  display: grid;
+  place-items: center;
+  line-height: 0.8;
+  font-family: "Peignot LT Std";
+  font-size: 4em;
+  font-style: normal;
+  letter-spacing: 8px;
+  margin: 3em 0;
+}
+.formosa-center-type h2 span {
+  color: white;
+}
+.formosa-center-type h3 {
+  font-size: 2.25em;
+  max-width: 10em;
+  font-family: "oswald";
+  margin: 0;
+}
+.formosa-center-type h4 {
+  font-size: 2em;
+  font-family: "Squada One", cursive;
+}
+.formosa-center-type h4 span {
+  font-family: "Peignot LT Std";
+}
+.formosa-center-type h4.yananeska {
+  font-size: 1.25em;
+  font-family: "Yananeska Personal Use", sans-serif;
+}
+.formosa-center-type a {
+  color: #8c0000;
+  font-size: 2.75em;
+  font-family: "oswald";
+}
+.formosa-center-type p {
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 2em;
+  max-width: 35em;
+}
+.formosa-center-type p span {
   display: grid;
   place-items: center;
   color: grey;
