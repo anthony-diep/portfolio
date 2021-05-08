@@ -509,13 +509,17 @@ body {
   min-width: 200px;
 }
 
-/* SURFRIDERS */
 /* MEDIA QUERIES */
 /* RESPONSIVE TYPOGRAPHY */
 body {
-  font-size: 87.5%;
+  font-size: 30%;
 }
 
+@media (min-width: 375px) {
+  body {
+    font-size: 50%;
+  }
+}
 @media (min-width: 768px) {
   body {
     font-size: 100%;
@@ -1125,7 +1129,7 @@ ANIMATIONS SCROLL TRIGGERED ANIMATIONS .animate-on-scroll,
   overflow: hidden;
   position: absolute;
   padding-left: 0.5rem;
-  left: 200px;
+  left: 220px;
   animation: openclose 7s ease-in-out infinite;
 }
 
@@ -1196,6 +1200,174 @@ ANIMATIONS SCROLL TRIGGERED ANIMATIONS .animate-on-scroll,
     top: 0;
     width: 0;
     text-indent: 0;
+  }
+}
+/* MEDIA QUERIES */
+/* RESPONSIVE TYPOGRAPHY */
+@media (min-width: 375px) {
+  .revealmessage {
+    width: 230px;
+    font-size: 1.5rem;
+    line-height: 1.15;
+  }
+
+  .message {
+    font-weight: 550;
+    padding-left: 0.25rem;
+    left: 110px;
+  }
+
+  @keyframes openclose {
+    0% {
+      top: 0rem;
+      width: 0;
+    }
+    5% {
+      width: 0;
+    }
+    15% {
+      width: 230px;
+    }
+    30% {
+      top: 0rem;
+      width: 230px;
+    }
+    33% {
+      top: 0rem;
+      width: 0;
+    }
+    35% {
+      top: 0rem;
+      width: 0;
+    }
+    38% {
+      top: -4.5rem;
+    }
+    48% {
+      top: -4.5rem;
+      width: 180px;
+    }
+    62% {
+      top: -4.5rem;
+      width: 180px;
+    }
+    66% {
+      top: -4.5rem;
+      width: 0;
+      text-indent: 0;
+    }
+    71% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    86% {
+      top: -9rem;
+      width: 250px;
+    }
+    95% {
+      top: -9rem;
+      width: 250px;
+    }
+    98% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    100% {
+      top: 0;
+      width: 0;
+      text-indent: 0;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .revealmessage {
+    width: 430px;
+    font-size: 2.75rem;
+    line-height: 1.25;
+  }
+
+  .message {
+    font-weight: 700;
+    padding-left: 0.5rem;
+    left: 200px;
+  }
+}
+@keyframes openclose {
+  0% {
+    top: 0rem;
+    width: 0;
+  }
+  5% {
+    width: 0;
+  }
+  15% {
+    width: 230px;
+  }
+  30% {
+    top: 0rem;
+    width: 230px;
+  }
+  33% {
+    top: 0rem;
+    width: 0;
+  }
+  35% {
+    top: 0rem;
+    width: 0;
+  }
+  38% {
+    top: -4.5rem;
+  }
+  48% {
+    top: -4.5rem;
+    width: 180px;
+  }
+  62% {
+    top: -4.5rem;
+    width: 180px;
+  }
+  66% {
+    top: -4.5rem;
+    width: 0;
+    text-indent: 0;
+  }
+  71% {
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
+  }
+  86% {
+    top: -9rem;
+    width: 250px;
+  }
+  95% {
+    top: -9rem;
+    width: 250px;
+  }
+  98% {
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
+  }
+  100% {
+    top: 0;
+    width: 0;
+    text-indent: 0;
+  }
+}
+@media (min-width: 1250px) {
+  .revealmessage {
+    width: 550px;
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+
+  .message {
+    font-weight: 900;
+    padding-left: 0.5rem;
+    left: 220px;
   }
 }
 .hover-block {
