@@ -377,38 +377,38 @@ ANIMATIONS SCROLL TRIGGERED ANIMATIONS .animate-on-scroll,
       width: 0;
     }
     38% {
-      top: -4.5rem;
+      top: -1.75rem;
     }
     48% {
-      top: -4.5rem;
-      width: 180px;
+      top: -1.75rem;
+      width: 90px;
     }
     62% {
-      top: -4.5rem;
-      width: 180px;
+      top: -1.75rem;
+      width: 90px;
     }
     66% {
-      top: -4.5rem;
+      top: -1.75rem;
       width: 0;
       text-indent: 0;
     }
     71% {
-      top: -9rem;
+      top: -3.35rem;
       width: 0;
-      text-indent: 5px;
+      text-indent: 0;
     }
     86% {
-      top: -9rem;
-      width: 250px;
+      top: -3.35rem;
+      width: 310px;
     }
     95% {
-      top: -9rem;
-      width: 250px;
+      top: -3.35rem;
+      width: 310px;
     }
     98% {
-      top: -9rem;
+      top: -3.35rem;
       width: 0;
-      text-indent: 5px;
+      text-indent: 0;
     }
     100% {
       top: 0;
@@ -420,6 +420,85 @@ ANIMATIONS SCROLL TRIGGERED ANIMATIONS .animate-on-scroll,
 
 @media (min-width: $breakpoint-small) {
   .revealmessage {
+    width: 330px;
+    font-size: 2rem;
+    line-height: 1.25;
+  }
+
+  .message {
+    font-weight: 600;
+    padding-left: 0.5rem;
+    // top: 0.2rem;
+    left: 150px;
+  }
+
+  @keyframes openclose {
+    0% {
+      top: 0rem;
+      width: 0;
+    }
+    5% {
+      width: 0;
+    }
+    15% {
+      width: 160px;
+    }
+    30% {
+      top: 0rem;
+      width: 160px;
+    }
+    33% {
+      top: 0rem;
+      width: 0;
+    }
+    35% {
+      top: 0rem;
+      width: 0;
+    }
+    38% {
+      top: -2.6rem;
+    }
+    48% {
+      top: -2.6rem;
+      width: 125px;
+    }
+    62% {
+      top: -2.6rem;
+      width: 125px;
+    }
+    66% {
+      top: -2.6rem;
+      width: 0;
+      text-indent: 0;
+    }
+    71% {
+      top: -5rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    86% {
+      top: -5rem;
+      width: 240px;
+    }
+    95% {
+      top: -5rem;
+      width: 240px;
+    }
+    98% {
+      top: -5rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    100% {
+      top: 0;
+      width: 0;
+      text-indent: 0;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-medium) {
+  .revealmessage {
     width: 430px;
     font-size: 2.75rem;
     line-height: 1.25;
@@ -429,71 +508,71 @@ ANIMATIONS SCROLL TRIGGERED ANIMATIONS .animate-on-scroll,
     font-weight: 700;
     padding-left: 0.5rem;
     // top: 0.2rem;
-    left: 200px;
+    left: 203px;
   }
-}
 
-@keyframes openclose {
-  0% {
-    top: 0rem;
-    width: 0;
-  }
-  5% {
-    width: 0;
-  }
-  15% {
-    width: 230px;
-  }
-  30% {
-    top: 0rem;
-    width: 230px;
-  }
-  33% {
-    top: 0rem;
-    width: 0;
-  }
-  35% {
-    top: 0rem;
-    width: 0;
-  }
-  38% {
-    top: -4.5rem;
-  }
-  48% {
-    top: -4.5rem;
-    width: 180px;
-  }
-  62% {
-    top: -4.5rem;
-    width: 180px;
-  }
-  66% {
-    top: -4.5rem;
-    width: 0;
-    text-indent: 0;
-  }
-  71% {
-    top: -9rem;
-    width: 0;
-    text-indent: 5px;
-  }
-  86% {
-    top: -9rem;
-    width: 250px;
-  }
-  95% {
-    top: -9rem;
-    width: 250px;
-  }
-  98% {
-    top: -9rem;
-    width: 0;
-    text-indent: 5px;
-  }
-  100% {
-    top: 0;
-    width: 0;
-    text-indent: 0;
+  @keyframes openclose {
+    0% {
+      top: 0rem;
+      width: 0;
+    }
+    5% {
+      width: 0;
+    }
+    15% {
+      width: 210px;
+    }
+    30% {
+      top: 0rem;
+      width: 210px;
+    }
+    33% {
+      top: 0rem;
+      width: 0;
+    }
+    35% {
+      top: 0rem;
+      width: 0;
+    }
+    38% {
+      top: -3.35rem;
+    }
+    48% {
+      top: -3.35rem;
+      width: 163px;
+    }
+    62% {
+      top: -3.35rem;
+      width: 163px;
+    }
+    66% {
+      top: -3.35rem;
+      width: 0;
+      text-indent: 0;
+    }
+    71% {
+      top: -6.75rem;
+      width: 0;
+      text-indent: 1px;
+    }
+    86% {
+      top: -6.75rem;
+      width: 255px;
+    }
+    95% {
+      top: -6.75rem;
+      width: 255px;
+    }
+    98% {
+      top: -6.75rem;
+      width: 0;
+      text-indent: 1px;
+    }
+    100% {
+      top: 0;
+      width: 0;
+      text-indent: 0;
+    }
   }
 }
 

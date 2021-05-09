@@ -248,6 +248,12 @@ body {
 
 @media (min-width: $breakpoint-small) {
     body {
+        font-size: 80%;
+    }
+}
+
+@media (min-width: $breakpoint-medium) {
+    body {
         font-size: 100%;
     }
 }
