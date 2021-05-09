@@ -512,10 +512,10 @@ body {
 /* MEDIA QUERIES */
 /* RESPONSIVE TYPOGRAPHY */
 body {
-  font-size: 30%;
+  font-size: 37%;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 400px) {
   body {
     font-size: 50%;
   }
@@ -1116,9 +1116,9 @@ ANIMATIONS SCROLL TRIGGERED ANIMATIONS .animate-on-scroll,
   white-space: nowrap;
   overflow: hidden;
   position: relative;
-  width: 550px;
-  font-size: 3rem;
-  line-height: 1.5;
+  width: 200px;
+  font-size: 1.3rem;
+  line-height: 1.15;
 }
 
 .premessage {
@@ -1133,8 +1133,8 @@ ANIMATIONS SCROLL TRIGGERED ANIMATIONS .animate-on-scroll,
   font-weight: 900;
   overflow: hidden;
   position: absolute;
-  padding-left: 0.5rem;
-  left: 220px;
+  padding-left: 0.25rem;
+  left: 95px;
   animation: openclose 7s ease-in-out infinite;
 }
 
@@ -1153,11 +1153,11 @@ ANIMATIONS SCROLL TRIGGERED ANIMATIONS .animate-on-scroll,
     width: 0;
   }
   15% {
-    width: 230px;
+    width: 100px;
   }
   30% {
     top: 0rem;
-    width: 230px;
+    width: 100px;
   }
   33% {
     top: 0rem;
@@ -1168,38 +1168,38 @@ ANIMATIONS SCROLL TRIGGERED ANIMATIONS .animate-on-scroll,
     width: 0;
   }
   38% {
-    top: -4.5rem;
+    top: -1.5rem;
   }
   48% {
-    top: -4.5rem;
-    width: 180px;
+    top: -1.5rem;
+    width: 75px;
   }
   62% {
-    top: -4.5rem;
-    width: 180px;
+    top: -1.5rem;
+    width: 75px;
   }
   66% {
-    top: -4.5rem;
+    top: -1.5rem;
     width: 0;
     text-indent: 0;
   }
   71% {
-    top: -9rem;
+    top: -2.9rem;
     width: 0;
-    text-indent: 5px;
+    text-indent: 0;
   }
   86% {
-    top: -9rem;
-    width: 250px;
+    top: -2.9rem;
+    width: 110px;
   }
   95% {
-    top: -9rem;
-    width: 250px;
+    top: -2.9rem;
+    width: 110px;
   }
   98% {
-    top: -9rem;
+    top: -2.9rem;
     width: 0;
-    text-indent: 5px;
+    text-indent: 0;
   }
   100% {
     top: 0;
@@ -1209,7 +1209,7 @@ ANIMATIONS SCROLL TRIGGERED ANIMATIONS .animate-on-scroll,
 }
 /* MEDIA QUERIES */
 /* RESPONSIVE TYPOGRAPHY */
-@media (min-width: 375px) {
+@media (min-width: 400px) {
   .revealmessage {
     width: 230px;
     font-size: 1.5rem;
