@@ -483,7 +483,16 @@ body {
   max-width: none;
   font-size: 1.25em;
 }
+.project-container .project-name p span {
+  max-width: none;
+  color: #656565;
+  margin: 0 0 5em 0;
+  font-family: quicksand, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
 .project-container .project-name h2,
+.project-container .project-name h3,
 .project-container .project-name p {
   width: 100%;
 }
@@ -515,12 +524,12 @@ body {
   font-size: 37%;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 480px) {
   body {
     font-size: 50%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   body {
     font-size: 80%;
   }
@@ -573,7 +582,7 @@ body {
 .row.nogap > * {
   margin: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .row.nogap .one-third {
     width: 33.333%;
   }
@@ -581,7 +590,7 @@ body {
     width: 66.666%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .row > * {
     flex-grow: 0;
   }
@@ -718,16 +727,16 @@ section .surfriders-section {
 .project-hero .project-hero-content-short {
   max-width: 1000px;
   position: relative;
-  top: -350px;
-  width: 100%;
+  top: -130px;
+  width: 80%;
   margin: 0 auto;
   padding: 0 1em;
 }
 .project-hero .project-hero-content-long {
   max-width: 1000px;
   position: relative;
-  top: -450px;
-  width: 100%;
+  top: -160px;
+  width: 80%;
   margin: 0 auto;
   padding: 0 1em;
 }
@@ -785,6 +794,55 @@ section .surfriders-section {
   margin-bottom: 3em;
 }
 
+/* MEDIA QUERIES */
+@media (min-width: 480px) {
+  .project-hero .project-hero-content-short {
+    max-width: 1000px;
+    top: -170px;
+    width: 85%;
+  }
+  .project-hero .project-hero-content-long {
+    max-width: 1000px;
+    top: -210px;
+    width: 85%;
+  }
+}
+@media (min-width: 769px) {
+  .project-hero .project-hero-content-short {
+    max-width: 1000px;
+    top: -270px;
+    width: 90%;
+  }
+  .project-hero .project-hero-content-long {
+    max-width: 1000px;
+    top: -340px;
+    width: 90%;
+  }
+}
+@media (min-width: 1050px) {
+  .project-hero .project-hero-content-short {
+    max-width: 1000px;
+    top: -340px;
+    width: 97%;
+  }
+  .project-hero .project-hero-content-long {
+    max-width: 1000px;
+    top: -450px;
+    width: 97%;
+  }
+}
+@media (min-width: 1250px) {
+  .project-hero .project-hero-content-short {
+    max-width: 1000px;
+    top: -400px;
+    width: 100%;
+  }
+  .project-hero .project-hero-content-long {
+    max-width: 1000px;
+    top: -450px;
+    width: 100%;
+  }
+}
 .hide-visually {
   position: absolute;
   top: -9999px;
@@ -1208,8 +1266,7 @@ ANIMATIONS SCROLL TRIGGERED ANIMATIONS .animate-on-scroll,
   }
 }
 /* MEDIA QUERIES */
-/* RESPONSIVE TYPOGRAPHY */
-@media (min-width: 400px) {
+@media (min-width: 480px) {
   .revealmessage {
     width: 230px;
     font-size: 1.5rem;
@@ -1286,7 +1343,7 @@ ANIMATIONS SCROLL TRIGGERED ANIMATIONS .animate-on-scroll,
     }
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .revealmessage {
     width: 330px;
     font-size: 2rem;
@@ -1451,6 +1508,70 @@ ANIMATIONS SCROLL TRIGGERED ANIMATIONS .animate-on-scroll,
     font-weight: 900;
     padding-left: 0.5rem;
     left: 220px;
+  }
+
+  @keyframes openclose {
+    0% {
+      top: 0rem;
+      width: 0;
+    }
+    5% {
+      width: 0;
+    }
+    15% {
+      width: 230px;
+    }
+    30% {
+      top: 0rem;
+      width: 230px;
+    }
+    33% {
+      top: 0rem;
+      width: 0;
+    }
+    35% {
+      top: 0rem;
+      width: 0;
+    }
+    38% {
+      top: -4.5rem;
+    }
+    48% {
+      top: -4.5rem;
+      width: 180px;
+    }
+    62% {
+      top: -4.5rem;
+      width: 180px;
+    }
+    66% {
+      top: -4.5rem;
+      width: 0;
+      text-indent: 0;
+    }
+    71% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    86% {
+      top: -9rem;
+      width: 250px;
+    }
+    95% {
+      top: -9rem;
+      width: 250px;
+    }
+    98% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    100% {
+      top: 0;
+      width: 0;
+      text-indent: 0;
+    }
   }
 }
 .hover-block {

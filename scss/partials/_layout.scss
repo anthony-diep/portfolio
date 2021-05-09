@@ -146,7 +146,16 @@ body {
             max-width: none;
             font-size: 1.25em;
         }
+        p span {
+            max-width: none;
+            color: rgb(101, 101, 101);
+            margin: 0 0 5em 0;
+            font-family: quicksand, sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
         h2,
+        h3,
         p {
             width: 100%;
         }
