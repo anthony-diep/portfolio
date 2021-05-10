@@ -27,11 +27,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- SWIPER JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
 
-    <header class="site-header">
+    <header class="site-header" data-navstate="closed">
         <div class="site-id">
             <div class="logo">
                 <a href="index.html"><img src="img/personal_logo_black.png" alt="Test Logo"></a>
@@ -155,38 +158,38 @@
 
     <hr />
 
-    <section class="animate-on-scroll">
-
-
+    <section>
         <h3 class="text-centered">My Other Projects</h3>
-
-        <ul class="mini-projects-menu">
-            <li><a href="surfriders.html">
-                    <img src="img/mini_court_with_logo.jpg" alt="Placeholder">
-                </a></li>
-            <li><a href="formosa.html">
-                    <img src="img/mini_formosa-tile.jpg" alt="Placeholder">
-                </a></li>
-            <li><a href="verizon.html">
-                    <img src="img/mini_verizon-tile.jpg" alt="Placeholder">
-                </a></li>
-            <li><a href="kl.html">
-                    <img src="img/mini_citylogo-tile.jpg" alt="Placeholder">
-                </a></li>
-            <li><a href="bookcover.html">
-                    <img src="img/mini_bookcover.jpg" alt="Placeholder">
-                </a></li>
-            <li><a href="stamps.html">
-                    <img src="img/mini_stamp-tile02.jpg" alt="Placeholder">
-                </a></li>
-            <li><a href="loki.html">
-                    <img src="img/mini_loki-tile.jpg" alt="Placeholder">
-                </a></li>
-            <li><a href="website.html">
-                    <img src="img/mini_website-tile.jpg" alt="Placeholder">
-                </a></li>
-        </ul>
-
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="surfriders.html">
+                        <img src="img/mini_court_with_logo.jpg" alt="Placeholder">
+                    </a></div>
+                <div class="swiper-slide"><a href="formosa.html">
+                        <img src="img/mini_formosa-tile.jpg" alt="Placeholder">
+                    </a></div>
+                <div class="swiper-slide"><a href="verizon.html">
+                        <img src="img/mini_verizon-tile.jpg" alt="Placeholder">
+                    </a></div>
+                <div class="swiper-slide"><a href="kl.html">
+                        <img src="img/mini_citylogo-tile.jpg" alt="Placeholder">
+                    </a></div>
+                <div class="swiper-slide"><a href="bookcover.html">
+                        <img src="img/mini_bookcover.jpg" alt="Placeholder">
+                    </a></div>
+                <div class="swiper-slide"><a href="stamps.html">
+                        <img src="img/mini_stamp-tile02.jpg" alt="Placeholder">
+                    </a></div>
+                <div class="swiper-slide"><a href="loki.html">
+                        <img src="img/mini_loki-tile.jpg" alt="Placeholder">
+                    </a></div>
+                <div class="swiper-slide"><a href="website.html">
+                        <img src="img/mini_website-tile.jpg" alt="Placeholder">
+                    </a></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
     </section>
 
     <footer class="site-footer">
@@ -208,6 +211,10 @@
             speedAsDuration: true
         });
     </script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- Main JS -->
     <script src="js/script.js"></script>
