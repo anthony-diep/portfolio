@@ -85,6 +85,17 @@ section {
     }
 }
 
+/* ABOUT HERO SECTION */
+.about-hero {
+    background: black;
+    h1 {
+        margin-bottom: 0.25em;
+        color: white;
+        max-width: 900px;
+        // display: flex;
+    }
+}
+
 /* CONTACT SECTION */
 .contact {
     background: black;

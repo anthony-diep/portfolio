@@ -252,7 +252,15 @@ hr.blue-line {
         margin-bottom: 0.15em;
         span {
             font-family: "Yananeska Personal Use", sans-serif;
-            font-size: 20px;
+            font-size: 10px;
+        }
+    }
+    @media (min-width: $breakpoint-mobile) {
+        h1 {
+            span {
+                font-family: "Yananeska Personal Use", sans-serif;
+                font-size: 20px;
+            }
         }
     }
     h2 {
