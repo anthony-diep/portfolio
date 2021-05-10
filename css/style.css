@@ -1621,8 +1621,8 @@ ANIMATIONS SCROLL TRIGGERED ANIMATIONS .animate-on-scroll,
   position: absolute;
   height: auto;
   width: 33%;
-  border: solid white 4px;
-  color: white;
+  border: solid yellow 4px;
+  color: yellow;
   font-size: 1.25em;
   padding: 0.75em 0 0.75em 0.5em;
 }
@@ -1638,8 +1638,8 @@ ANIMATIONS SCROLL TRIGGERED ANIMATIONS .animate-on-scroll,
   position: absolute;
   height: auto;
   width: 33%;
-  border: solid white 4px;
-  color: white;
+  border: solid yellow 4px;
+  color: yellow;
   font-size: 1.25em;
   padding: 0.75em 0 0.75em 0.5em;
 }
@@ -1682,32 +1682,26 @@ ANIMATIONS SCROLL TRIGGERED ANIMATIONS .animate-on-scroll,
   .hover-block .hover-content .ribbon-left {
     width: 100%;
     height: 100%;
-    position: absolute;
     top: 8%;
     right: 53%;
-    text-align: center;
   }
   .hover-block .hover-content .ribbon-left span {
-    position: absolute;
     height: auto;
     width: 33%;
-    border: solid white 3px;
+    border: solid 3px;
     font-size: 0.55em;
     padding: 0.75em 0 0.75em 0.5em;
   }
   .hover-block .hover-content .ribbon-right {
     width: 90%;
     height: 100%;
-    position: absolute;
     top: 8%;
     left: 27%;
-    text-align: center;
   }
   .hover-block .hover-content .ribbon-right span {
-    position: absolute;
     height: auto;
     width: 33%;
-    border: solid white 3px;
+    border: solid 3px;
     font-size: 0.55em;
     padding: 0.75em 0 0.75em 0.5em;
   }
@@ -1716,32 +1710,26 @@ ANIMATIONS SCROLL TRIGGERED ANIMATIONS .animate-on-scroll,
   .hover-block .hover-content .ribbon-left {
     width: 100%;
     height: 100%;
-    position: absolute;
     top: 8%;
     right: 53%;
-    text-align: center;
   }
   .hover-block .hover-content .ribbon-left span {
-    position: absolute;
     height: auto;
     width: 35%;
-    border: solid white 4px;
+    border: solid 4px;
     font-size: 1em;
     padding: 0.75em 0 0.75em 0.5em;
   }
   .hover-block .hover-content .ribbon-right {
     width: 100%;
     height: 100%;
-    position: absolute;
     top: 8%;
-    left: 17%;
-    text-align: center;
+    left: 18%;
   }
   .hover-block .hover-content .ribbon-right span {
-    position: absolute;
     height: auto;
     width: 36%;
-    border: solid white 4px;
+    border: solid 4px;
     font-size: 1em;
     padding: 0.75em 0.5em;
   }

@@ -28,8 +28,8 @@
                 height: auto;
                 width: 33%;
                 // background-color: white;
-                border: solid white 4px;
-                color: white;
+                border: solid yellow 4px;
+                color: yellow;
                 font-size: 1.25em;
                 padding: 0.75em 0 0.75em 0.5em;
                 // transform: rotate(90deg);
@@ -51,8 +51,8 @@
                 height: auto;
                 width: 33%;
                 // background-color: white;
-                border: solid white 4px;
-                color: white;
+                border: solid yellow 4px;
+                color: yellow;
                 font-size: 1.25em;
                 padding: 0.75em 0 0.75em 0.5em;
                 // transform: rotate(90deg);
@@ -113,16 +113,13 @@
             .ribbon-left {
                 width: 100%;
                 height: 100%;
-                position: absolute;
                 top: 8%;
                 right: 53%;
-                text-align: center;
 
                 span {
-                    position: absolute;
                     height: auto;
                     width: 33%;
-                    border: solid white 3px;
+                    border: solid 3px;
                     font-size: 0.55em;
                     padding: 0.75em 0 0.75em 0.5em;
                 }
@@ -130,16 +127,13 @@
             .ribbon-right {
                 width: 90%;
                 height: 100%;
-                position: absolute;
                 top: 8%;
                 left: 27%;
-                text-align: center;
 
                 span {
-                    position: absolute;
                     height: auto;
                     width: 33%;
-                    border: solid white 3px;
+                    border: solid 3px;
                     font-size: 0.55em;
                     padding: 0.75em 0 0.75em 0.5em;
                 }
@@ -154,16 +148,13 @@
             .ribbon-left {
                 width: 100%;
                 height: 100%;
-                position: absolute;
                 top: 8%;
                 right: 53%;
-                text-align: center;
 
                 span {
-                    position: absolute;
                     height: auto;
                     width: 35%;
-                    border: solid white 4px;
+                    border: solid 4px;
                     font-size: 1em;
                     padding: 0.75em 0 0.75em 0.5em;
                 }
@@ -171,16 +162,13 @@
             .ribbon-right {
                 width: 100%;
                 height: 100%;
-                position: absolute;
                 top: 8%;
-                left: 17%;
-                text-align: center;
+                left: 18%;
 
                 span {
-                    position: absolute;
                     height: auto;
                     width: 36%;
-                    border: solid white 4px;
+                    border: solid 4px;
                     font-size: 1em;
                     padding: 0.75em 0.5em;
                 }
