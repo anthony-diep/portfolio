@@ -63,3 +63,13 @@ const myobserver_2 = new IntersectionObserver(entries => {
 document.querySelectorAll('header, section, footer').forEach((section) => {
   myobserver_2.observe(section);
 });
+
+// SWIPER JS
+var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 5,
+  spaceBetween: 30,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
