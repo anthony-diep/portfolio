@@ -370,7 +370,6 @@ body {
 .container {
   max-width: 70%;
   margin: 0 auto;
-  padding: 0 5em;
 }
 
 /* ABOUT CONTAINER */
@@ -1177,14 +1176,17 @@ section .surfriders-section {
 
 /* HERO SECTION */
 .hero {
-  background: black;
   padding: 2em 0;
+  margin-bottom: 2em;
   color: white;
   min-height: 101vh;
   display: -ms-grid;
   display: grid;
   place-items: center;
-  margin-bottom: 2em;
+  background-image: url("../img/hero-img.jpg");
+  background-size: cover;
+  background-position: center;
+  width: auto;
 }
 .hero h1 {
   margin-bottom: 0.25em;
@@ -1193,6 +1195,35 @@ section .surfriders-section {
 }
 .hero p {
   margin: 1em 0 1em 0;
+}
+
+.large-header {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+}
+.large-header h1 {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  color: #f9f1e9;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate(-50%, -50%, 0);
+}
+.large-header .revealmessage {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  color: #f9f1e9;
+  top: 90%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate(-50%, -50%, 0);
 }
 
 /* ABOUT HERO SECTION */
