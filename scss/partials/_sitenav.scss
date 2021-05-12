@@ -92,7 +92,7 @@
     .menu-button {
         position: absolute;
         position: fixed;
-        right: 30px;
+        right: 26px;
         // display: block;
         top: 20px;
         width: 40px;
@@ -118,7 +118,7 @@
             transition-property: all;
             transition-duration: 0.25s;
             transition-timing-fuction: cubic-bezier(0.18, 0.02, 0.08, 0.98);
-            transition-delay: 0;
+            transition-delay: 0;     
         }
 
         span:last-child {
@@ -182,6 +182,24 @@
 .site-header[data-colorstate="light"] {
     .site-nav .menu-button span {
         background: rgb(159, 0, 0);
+    }
+    .site-nav .menu-button span.kl {
+        background: rgb(37, 107, 37);
+    }
+    .site-nav .menu-button span.surfriders {
+        background: #ff5722;
+    }
+    .site-nav .menu-button span.formosa {
+        background: #03f0ff;
+    }
+    .site-nav .menu-button span.stamps {
+        background: rgb(6, 67, 146);
+    }
+    .site-nav .menu-button span.bookcover {
+        background: rgb(219, 213, 118);
+    }
+    .site-nav .menu-button span.loki {
+        background: rgb(63, 133, 151);
     }
 }
 // @media only screen and (max-width: 500px) {

@@ -63,7 +63,7 @@ section {
 .hero {
     // background: black;
     // text-align: center;
-    padding: 2em 0;
+    padding: 2em 0 0 0;
     margin-bottom: 2em;
     color: white;
     min-height: 101vh; //This increases the height of the hero
@@ -109,6 +109,15 @@ section {
 }
 
 @media (min-width: $breakpoint-medium) {
+    .large-header {
+        .absolute {
+            top: 15%;
+            left: 32%;
+        }
+    }
+}
+
+@media (min-height: $breakpoint-large) {
     .large-header {
         .absolute {
             top: 25%;
@@ -233,7 +242,7 @@ section {
 }
 
 /* SURFRIDERS IMAGE */
-.surfriders-img {
+.case-study-img {
     display: grid;
     place-items: center;
     margin-bottom: 3em;

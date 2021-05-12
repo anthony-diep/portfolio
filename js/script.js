@@ -66,10 +66,14 @@ document.querySelectorAll('header, section, footer').forEach((section) => {
 
 // SWIPER JS
 var swiper = new Swiper('.swiper-container', {
-  slidesPerView: 5,
+  slidesPerView: 4,
   spaceBetween: 30,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 });

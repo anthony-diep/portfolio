@@ -19,10 +19,10 @@ $font-family-serif: "Source Serif Pro", Georgia, "Times New Roman", Times, serif
 $gutter: 1em;
 
 // BREAKPOINTS
-$breakpoint-mobile: 480px;
+$breakpoint-mobile: 414px;
 $breakpoint-small: 769px;
-$breakpoint-medium: 1050px;
-$breakpoint-large: 1250px;
+$breakpoint-medium: 1024px;
+$breakpoint-large: 1920px;
 
 // IMPORTS
 @import "partials/toc";
