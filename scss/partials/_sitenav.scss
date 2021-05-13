@@ -111,14 +111,14 @@
             display: inline-block;
             margin-top: 3px;
             margin-right: 4px;
-            height: 35px;
-            width: 2px;
+            height: 38px;
+            width: 3px;
             display: inline-block;
             /*     transition: all .25s cubic-bezier(.18,.02,.08,.98); */
             transition-property: all;
             transition-duration: 0.25s;
             transition-timing-fuction: cubic-bezier(0.18, 0.02, 0.08, 0.98);
-            transition-delay: 0;     
+            transition-delay: 0;
         }
 
         span:last-child {
