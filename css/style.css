@@ -354,7 +354,14 @@ hr.blue-line {
   background-color: #464646;
 }
 
-/* RIBBON ON IMAGE */
+/* CASE STUDY IMAGE */
+.case-study-img {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin-bottom: 3em;
+}
+
 /* RESPONSIVE IMAGES */
 img {
   max-width: 100%;
@@ -868,6 +875,13 @@ body {
   padding: 3em;
   max-width: 80%;
 }
+.project-container .project-body-kl {
+  color: white;
+  background-color: #256b25;
+  margin: 0;
+  padding: 1.5em 3em;
+  max-width: 50%;
+}
 .project-container .project-body-loki {
   color: white;
   background-color: #3f8597;
@@ -1262,6 +1276,14 @@ section .surfriders-section {
   margin: 0 auto;
   padding: 0 1em;
 }
+.project-hero .project-hero-content-irregular {
+  max-width: 1000px;
+  position: relative;
+  top: -220px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 1em;
+}
 .project-hero .project-hero-img {
   text-align: right;
 }
@@ -1311,14 +1333,6 @@ section .surfriders-section {
   width: 100%;
 }
 
-/* SURFRIDERS IMAGE */
-.case-study-img {
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  margin-bottom: 3em;
-}
-
 /* MEDIA QUERIES */
 @media (min-width: 414px) {
   .project-hero .project-hero-content-short {
@@ -1353,6 +1367,11 @@ section .surfriders-section {
   .project-hero .project-hero-content-long {
     max-width: 1000px;
     top: -450px;
+    width: 97%;
+  }
+  .project-hero .project-hero-content-irregular {
+    max-width: 1000px;
+    top: -580px;
     width: 97%;
   }
 }
@@ -1432,6 +1451,12 @@ section .surfriders-section {
   list-style: none;
   color: black;
   margin-top: 5px;
+}
+.site-header .panels .panel1 a {
+  color: black;
+}
+.site-header .panels .panel1 a:hover {
+  color: #464646;
 }
 .site-header .panels .panel2child {
   background: grey;

@@ -53,6 +53,12 @@
                 color: black;
                 margin-top: 5px;
             }
+            a {
+                color: black;
+                &:hover {
+                    color: $color-link-darker;
+                }
+            }
         }
 
         .panel2child {
