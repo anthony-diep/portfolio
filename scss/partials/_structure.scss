@@ -133,6 +133,7 @@ section {
 /* ABOUT HERO SECTION */
 .about-hero {
     background: black;
+    height: 100vh;
     h1 {
         margin-bottom: 0.25em;
         color: white;
@@ -182,15 +183,18 @@ section {
         max-width: 1000px;
         // margin: -300px auto 300px auto;
         position: relative;
-        top: -220px;
+        top: -280px;
         width: 80%;
         margin: 0 auto;
         padding: 0 $gutter;
+        text-align: left;
+        justify-content: center;
     }
     .project-hero-img {
         text-align: right;
         img {
-            width: 80%;
+            width: auto;
+            // height: 100vh;
             // margin-right: 0;
             // margin-left: auto;
             // display: block;
@@ -327,6 +331,13 @@ section {
             // margin: -300px auto 300px auto;
             top: -450px;
             width: 100%;
+        }
+        .project-hero-content-irregular {
+            max-width: 1000px;
+            // margin: -300px auto 300px auto;
+            top: -780px;
+            right: 200px;
+            width: 97%;
         }
     }
 }
